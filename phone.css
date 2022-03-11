@@ -1,0 +1,40 @@
+.main{
+    /* background: red; */
+    width: 100vw;
+}
+.body{
+    width: 100vw;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+}
+
+#heading, #h2{
+    font-size: 14vw;
+}
+p{
+    font-size: 0.6rem;
+}
+
+
+.sun{
+    /* top: 25%; */
+    opacity: 1;
+}
+
+.dark .sun{
+    opacity: 0;
+}
+.moon{
+    /* bottom: 25%; */
+    opacity: 0;
+    transform: scale(2) rotate(180deg);
+}
+
+.theme-toggle-button{
+    padding: 3px;
+    border-radius: 5px;
+    
+}

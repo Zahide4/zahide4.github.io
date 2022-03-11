@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    --background-color: #F2F2F0;
+    --foreground-color: #dddddd;
+    --text-color: black;
+    --transition-delay: 1s;
+    --box-shadow-color: gray;
+    --button-background-color: black;
+    --button-text-color: white;
+    overflow: hidden;
+    /* transition: var(--transition-delay); */
+    color: var(--text-color);
+}
+
+body.dark {
+    --button-background-color: white;
+    --box-shadow-color: rgb(36, 36, 36);
+    --button-text-color: black;
+    --background-color: #36393F;
+    --foreground-color: #2F3136;
+    --text-color: white;
+    --transition-delay: 1s;
+    
+    
+    /* transition: var(--transition-delay); */
+    color: var(--text-color);
+
+}
+
+.theme-toggle-button{
+    padding: .5em 0.8em;
+    border-radius: 1em;
+    outline: none;
+    background: var(--button-background-color);
+    cursor: pointer;
+    border: none;
+    /* margin: 1rem; */
+    transition: var(--transition-delay);
+    transform: scale(1);
+    color: var(--button-text-color);
+    margin-top: 5rem;
+}
+
+.theme-toggle-button:hover,
+.theme-toggle-button:focus
+{
+    transform: scale(1.15);
+}
+
+
+
+
+.main{
+    transition: var(--transition-delay);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    flex-direction: column;
+}
+.container{
+    /* transition: var(--transition-delay); */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px 2px var(--box-shadow-color);
+    background-color: var(--foreground-color);
+    height: 80vh;
+    width: 70rem;
+    gap: 2rem;
+    
+}
+
+#heading{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 5rem;
+}
+
+.headings{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#h2{
+    font-size: 5rem;
+    font-family: 'Major Mono Display', monospace;
+
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto mono";
+    /* text-align: justify; */
+}
+
+.footer{
+    font-family: "Roboto mono";
+    font-style: italic;
+    
+}
+
+.sun-moon-container{
+    --rotation: 0;
+
+    position: absolute;
+    top: 0;
+    height: 200vmin;
+    pointer-events: none;
+    transform: rotate(calc(var(--rotation) * 1deg));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform var(--transition-delay) ease-in-out;
+}
+
+.sun, .moon{
+    transform: scale(2);
+    /* width: 50px; */
+    /* height: 50px; */
+    position: absolute;
+    /* transition: opacity var(--transition-delay); */
+    /* fill: var(); */
+}
+
+.sun{
+    top: 10%;
+    opacity: 1;
+}
+
+.dark .sun{
+    opacity: 0;
+}
+.moon{
+    bottom: 10%;
+    opacity: 0;
+    transform: scale(2) rotate(180deg);
+}
+
+.dark .sun-moon-container{
+    --rotation: 180;
+}
+
+.dark .moon{
+    opacity: 1;
+}
