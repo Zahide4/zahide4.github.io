@@ -124,6 +124,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+	width: 100vw!important;
+	height: auto!important;
+    }
+    *{
+	overflow: visible!important;   	
     }
 
     .main {
@@ -136,20 +141,23 @@
     }
 
     .projects{
-        width: 100%;
-        padding: 0;
-        margin: 0;
+        width: 100%!important;
+        padding: 1rem!important;
+        margin-bottom: 3!important;
+	height: 20rem!important;
     }
 
     .thumb{
-        width: 320px;
+        width: 100%;
+        padding: 0;
+	margin: 0;
     }
 
     .box{
-        width: 100%;
+        width: 100vw!important;
     }
     .h3{
-        font-size: 2rem;
+        font-size: 2rem!important;
         padding: 3rem!important;
     }
 
