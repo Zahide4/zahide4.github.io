@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <title>Zahide4</title>
+
+    <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Jost:wght@500&family=Jura:wght@500&family=Reenie+Beanie&display=swap" rel="stylesheet">
-
-
-    <title>Zahid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Reenie+Beanie&family=Skranji&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="main">
-        <div class="container">
-            <div class="info">
-                <h1 class="h1">Hey, I'm a Web Developer</h1>
-                <div class="h2">Projects: ----> </div>
-		<div class="h4">Discord: Zahide4#3554</div>
+        <div class="header">
+            <h1 class="h1">Hey! I'm a Web Dev.</h1>
+            <p class="para">My name is Zahid, and I'd want to introduce myself. I work as a Front End Developer in
+                India. I consider myself a passionate developer who enjoys coding, UI design, and developing web
+                applications.
+            </p>
+            <div class="more">
+                <div onclick="show()" class="more-button">Read More..</div>
+
             </div>
-            <div class="projects">
-                <div class="box" id="box1">
-                    <h3 class="h3">Netherite Axes</h3>
-                    <img class="thumb" src="./img/netheriteaxes.png" alt="">
-                </div>
-                <div class="box" id="box2">
-                    <h3 class="h3">Cinox Network</h3>
-                    <img class="thumb" src="./img/cinox.png" alt="">
-                </div>
-                <div class="box" id="box3">
-                    <h3 class="h3">Lost Client</h3>
-                    <img class="thumb" src="./img/lostclient.png" alt="">
-                </div>
-                <div class="box" id="box4">
-                    <h3 class="h3">Cinox Store</h3>
-                    <img class="thumb" src="./img/cinoxstore.png" alt="">
-                </div>
+            <p class="para hidden" id="hidden">
+                In addition to my day job, I enjoy creating and contributing to open source projects. This allows me to
+                learn a lot of new things, advance as a developer, and contribute to other projects.
+            </p>
+            <p class="para">
+                I excel in: <span>HTML</span> <span>CSS</span> <span>Javascript</span> <span>Figma</span> and
+                <span>Photoshop</span>
+            </p>
+
+            <div onclick="sidebarToggle()" class="projects-button">
+                Get in touch --->
             </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <div class="box"><div class="txt">Discord: Zahide4#3554</div></div>
+            <div class="box"><div class="txt">Email: zahid.work1974@gmail.com</div></div>
+
+            <div onclick="sidebarToggleOff()" class="closebtn">CLOSE</div>
+
         </div>
     </div>
 </body>
+
+<script>
+    const x = document.getElementById("hidden")
+    function show() {
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function sidebarToggle() {
+        const sidebar = document.getElementById("contacts").style.width = "100vw";
+    }
+
+    function sidebarToggleOff() {
+        const sidebar = document.getElementById("contacts").style.width = "0";
+    }
+
+</script>
+
 </html>
