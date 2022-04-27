@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Jost';
+    overflow-x: hidden;
+    user-select: none;
+
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;  
+    display: flex;
+    justify-content: center;
+    background: url("./img/bgmain.svg") no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.h1{
+    font-family: 'Jost';
+    color: lightgray;
+    margin: 2rem;
+    font-size: 4rem;
+    background: linear-gradient(90deg, rgba(255,28,49,1) 0%, rgba(132,11,164,1) 36%, rgba(81,73,251,1) 58%, rgba(0,176,160,1) 83%, rgba(206,22,182,1) 100%);   
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    background-position: -100%;
+    
+    animation: animatedText 4s infinite;
+}
+
+@keyframes animatedText{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+
+.para{
+    margin: 1.3rem;
+    font-size: 25px;
+    font-family: 'Jost';
+    color: lightgray;
+    animation: float 2.3s infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+
+    }
+}
+
+span{
+    color: white;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0rem 2rem;
+}
+.more-button{
+    display: block;
+    width: 400px;
+    font-size: 25px;
+    color: gray;
+    margin: auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.projects-button{
+    font-size: 50px;
+    color: lightgray;
+    font-family: 'Reenie Beanie';
+    margin: 1rem;
+    border-radius: 10px;
+    position: relative;
+    display: inline;
+    width: 300px;
+}
+
+.contacts{
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.692);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    align-items: center;
+    transition: all 1s;
+}
+
+.txt{
+    color: lightgray!important;
+    font-size: 1.4rem;
+    
+}
+
+.closebtn{
+    font-size: 1.3rem;
+    color: lightgray;
+    padding:  0.5rem 1rem;
+    border-radius: 10px;
+    border: 2px solid gray;
+    letter-spacing: 7px;
+}
+
+
