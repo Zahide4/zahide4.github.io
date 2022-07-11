@@ -408,7 +408,6 @@ ul li:last-child::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1005;
     gap: 10px;
     text-align: left!important;
 }
