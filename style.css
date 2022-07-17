@@ -120,7 +120,12 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-
+/* 
+.logo{
+    width: 300px;
+    transform: rotate(-10deg);
+    margin-top: 4rem;
+} */
 ul {
     position: relative;
     transform: skewY(-15deg);
@@ -223,7 +228,15 @@ ul li:last-child::after {
     color: var(--para-color);
     letter-spacing: normal;
     user-select: none;
-    transition: all 0.3s;
+    transition: all 0.2s;
+    z-index: 100;
+}
+
+
+
+.para:hover{
+    transform: scale(1.05);
+    color: black;
 }
 
 .h1:hover {
@@ -242,6 +255,24 @@ ul li:last-child::after {
     user-select: none;
     transition: all 0.3s;
     margin: 2rem auto;
+    position: relative;
+
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.288);
+}
+
+.h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    left: 0px;
+    background: url("./bg.png") no-repeat center center;
+    z-index: -1;
+    opacity: 0.5;
+    transform: rotate(-20deg) scale(1.5);
+
+
 }
 
 .h2 {
@@ -286,6 +317,11 @@ ul li:last-child::after {
     padding: 0.5rem;
     font-family: nos;
     color: #ff005c;
+    transition: all 0.1s;
+}
+
+.box:hover{
+    background-color: white;
 }
 
 /* #box1 {
@@ -339,7 +375,15 @@ ul li:last-child::after {
     border-radius: 15px;
     font-family: inherit;
     background: #F9FAFB;
-    border: 1px solid lightgray;
+    border: 4px solid #ff005c;
+
+    transition: all 0.2s;
+    box-shadow: none;
+}
+
+.card:hover{
+    transform: translate(-11px, -14px);
+    box-shadow: 3px 5px white, 7px 9px #ff005c;
 }
 
 .quote {
