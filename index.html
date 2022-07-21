@@ -320,7 +320,19 @@
     <script src="./app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
+    </script>
+    <script src="./tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".box"), {
+            max: 25,
+            speed: 300
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".box"));
+
+        
     </script>
 </body>
 
