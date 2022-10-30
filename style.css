@@ -455,7 +455,7 @@ ul li:last-child::after {
 .para1 {
     margin-bottom: 1rem;
 
-    width: auto;
+    width: 100%;
     font-size: 20px;
     font-family: nos !important;
     line-height: 28px;
@@ -696,6 +696,9 @@ mark {
 } */
 
 
+.graph{
+    width: 100%;
+}
 
 .boxes1 {
     display: flex;
