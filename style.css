@@ -201,7 +201,7 @@ body {
     position: fixed;
     top: 0px;
     z-index: 10000;
-
+    background: #1b1f24;
 }
 
 .nav {
