@@ -2,235 +2,460 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahid</title>
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
 
-    <title>Zahid - Web Developer</title>
     <link rel="stylesheet" href="./style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <script>
-        console.log("hi")
-
-        if (window.innerWidth < 960) {
-            window.location = "index2.html";
-        }
-
-    </script>
-
 </head>
 
 <body>
-    <div id="particles-js"></div>
     <div class="splash">
-        <div aria-busy="true" aria-label="Loading" role="progressbar" class="container">
-            <div class="swing">
-                <div class="swing-l"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div class="swing-r"></div>
-            </div>
-            <div class="shadow">
-                <div class="shadow-l"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div class="shadow-r"></div>
-            </div>
-        </div>
-
+        <div class="loader"></div>
     </div>
-    <div class="main" id="main">
-        <div class="menu">
-            <ul>
-                <li style="--i:5"><a href="#main">Home</a></li>
-                <li style="--i:4"><a href="#why">Why</a></li>
-                <li style="--i:3"><a href="#testimonials">Testimonials</a></li>
-                <li style="--i:1"><a href="#contact">Contact</a></li>
-            </ul>
-
-        </div>
-
-        <div class="info">
-            <a target="_blank" href="https://github.com/zahide4/">
-
-                <div class="icons">
-                    <div class="github">
-                        <svg width="50px" height="50px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-github">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="text1">Github</div>
-
-                </div>
-
-                <!-- <img src="./bg.png" alt="" class="logo"> -->
-
+    <div class="navbar">
+        <ul class="nav">
+            <a href="#home">
+                <li><span>// </span>home</li>
             </a>
-            <h1 class="h1" id="home">I'm a Web Developer.</h1>
-            <div class="para having-bg">
-                Making your ideas a reality, as well as making the process of designing and deploying 🚀 websites for
-                your
-                company considerably easier, more affordable, and more accessible. Hi 👋, I'm a frontend web developer
-                👩‍💻
-                and student, learning and serving my clients with websites according to their needs. 🎉
-            </div>
-            <ol class="features">
-                <li class="feature">✔ Minimal cost</li>
-                <li class="feature">✔ Quick response</li>
-                <li class="feature">✔ Responsive sites</li>
-                <li class="feature">✔ Compatible with most browsers</li>
-                <li class="feature">✔ Hosting management</li>
-            </ol>
-            <h3 class="h3">I've recently worked at:</h3>
-            <ol class="features">
-                <li class="feature">- Lost Client</li>
-                <li class="feature">- Pixel Radio</li>
-                <li class="feature">- Canyon Network</li>
-                <li class="feature">- Parottu</li>
-                <li class="feature">- ApexCloud</li>
-                <li class="feature">- Reversal SMP</li>
-
-            </ol>
-            <h3 class="h3">I'm proficient in:</h3>
-
-            <ol class="features">
-                <li class="feature">> HTML</li>
-                <li class="feature">> CSS/SCSS/SASS</li>
-                <li class="feature">> Javascript/Typescript</li>
-                <li class="feature">> Python</li>
-                <li class="feature">> Node.js</li>
-                <li class="feature">> Figma, Adobe Photoshop and Adobe Illustrator for designing.</li>
-            </ol>
-            <h1 class="h2" id="why">Why a website though?</h1>
-
-            <div class="why-website" data-aos="fade-up">
-                <div class="para1">
-                    It's <span>foolish</span> in this day to not have your own website for personal or professional use.
-                    Every company <span>needs</span> a website to market its potential and attract the interest of
-                    clients who are in need.
-                </div>
-                <div class="para1">
-                    One of the <mark>biggest and sturdiest</mark> pillars supporting a business is having a
-                    <span>straightforward</span> yet <span>appealing</span>, <span>speedy</span>, and
-                    <span>responsive</span> website.
-                </div>
-                <div class="para1">Without a website, customers could <mark>doubt your company's
-                        validity</mark>. Having a website gives you the chance to make a fantastic first impression and
-                    reassure potential customers that you are a legitimate company. One of the most <span>crucial</span>
-                    things you can do is present your brand to potential buyers.
-                </div>
-                <h3 class="h3">don't believe me? take a look at the <mark>graph:</mark> 🤓</h3>
-                <img src="./graph.png" data-aos="fade-up" alt="" class="graph">
-            </div>
-
-            <h1 class="h2" id="testimonials" data-aos="fade-up">Testimonials:</h1>
-            <div class="boxes1" data-aos="fade-up">
-                <div class="card">
-                    <div class="card-name">Quick Communication, Clean designs and just overall enjoyable to work with,
-                        He took feedback very well and improved on things I mentioned.
-                    </div>
-                    <div class="quote">
-                        <svg width="80" height="80" viewBox="0 0 330 307" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M302.258 176.221C320.678 176.221 329.889 185.432 329.889 203.853V278.764C329.889 297.185 320.678 306.395 302.258 306.395H231.031C212.61 306.395 203.399 297.185 203.399 278.764V203.853C203.399 160.871 207.902 123.415 216.908 91.4858C226.323 59.1472 244.539 30.902 271.556 6.75027C280.562 -1.02739 288.135 -2.05076 294.275 3.68014L321.906 29.4692C328.047 35.2001 326.614 42.1591 317.608 50.3461C303.69 62.6266 292.228 80.4334 283.223 103.766C274.626 126.69 270.328 150.842 270.328 176.221H302.258ZM99.629 176.221C118.05 176.221 127.26 185.432 127.26 203.853V278.764C127.26 297.185 118.05 306.395 99.629 306.395H28.402C9.98126 306.395 0.770874 297.185 0.770874 278.764V203.853C0.770874 160.871 5.27373 123.415 14.2794 91.4858C23.6945 59.1472 41.9106 30.902 68.9277 6.75027C77.9335 -1.02739 85.5064 -2.05076 91.6467 3.68014L119.278 29.4692C125.418 35.2001 123.985 42.1591 114.98 50.3461C101.062 62.6266 89.6 80.4334 80.5942 103.766C71.9979 126.69 67.6997 150.842 67.6997 176.221H99.629Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <div class="author">- by Night Loaf <br> <span>Ex-owner of lost client</span> </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18">
-                        <path fill="none" d="M0 0H24V24H0z"></path>
-                    </svg>
-                </div>
-                <div class="card" id="card2">
-                    <div class="card-name">Zahid has been really helpful and exact when it came to my Website needs. I
-                        was always needing something exact, and he delivered. Five out of five!
-                    </div>
-                    <div class="quote">
-                        <svg width="80" height="80" viewBox="0 0 330 307" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M302.258 176.221C320.678 176.221 329.889 185.432 329.889 203.853V278.764C329.889 297.185 320.678 306.395 302.258 306.395H231.031C212.61 306.395 203.399 297.185 203.399 278.764V203.853C203.399 160.871 207.902 123.415 216.908 91.4858C226.323 59.1472 244.539 30.902 271.556 6.75027C280.562 -1.02739 288.135 -2.05076 294.275 3.68014L321.906 29.4692C328.047 35.2001 326.614 42.1591 317.608 50.3461C303.69 62.6266 292.228 80.4334 283.223 103.766C274.626 126.69 270.328 150.842 270.328 176.221H302.258ZM99.629 176.221C118.05 176.221 127.26 185.432 127.26 203.853V278.764C127.26 297.185 118.05 306.395 99.629 306.395H28.402C9.98126 306.395 0.770874 297.185 0.770874 278.764V203.853C0.770874 160.871 5.27373 123.415 14.2794 91.4858C23.6945 59.1472 41.9106 30.902 68.9277 6.75027C77.9335 -1.02739 85.5064 -2.05076 91.6467 3.68014L119.278 29.4692C125.418 35.2001 123.985 42.1591 114.98 50.3461C101.062 62.6266 89.6 80.4334 80.5942 103.766C71.9979 126.69 67.6997 150.842 67.6997 176.221H99.629Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <div class="author">- by ARandomGuy <br> <span>Staff of Reversal SMP</span> </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18">
-                        <path fill="none" d="M0 0H24V24H0z"></path>
-                    </svg>
-                </div>
-                <h3 class="h3">Honourable testimonial</h3>
-                <div class="para">"He got good social skills and knows how to deal with things." ~ Coolitoyce</div>
-            </div>
-            <h1 class="h2" id="contact" data-aos="flip-up">Get in touch:</h1>
-            <div class="contact">
-                <div class="para"><svg fill="#ff005c" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
-                        viewBox="0 0 490.6 490.6" style="enable-background:new 0 0 490.6 490.6;" xml:space="preserve">
-                        <g>
-                            <path
-                                d="M469.8,51.6h-449C9.3,51.6,0,61,0,72.4v345.8C0,429.7,9.4,439,20.8,439h447.9c11.5,0,20.8-9.4,21.9-20.8V72.5   C490.6,61,481.2,51.6,469.8,51.6z M424.6,93.3L244.8,253.7L65,93.3H424.6z M40.6,397.5V126.8l190.6,168.6c5.1,5.1,17.8,8.2,27.1,1   l190.6-169.6v270.6H40.6V397.5z">
-                            </path>
-                        </g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                        <g></g>
-                    </svg>Email: zahid.work1974@gmail.com</div>
-                <div class="para"><svg class="discordowo" fill="#ff005c" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="-1.5 0 24 24">
-                        <path
-                            d="m13.93 11.4c-.054.633-.582 1.127-1.224 1.127-.678 0-1.229-.55-1.229-1.229s.55-1.229 1.228-1.229c.683.029 1.225.59 1.225 1.277 0 .019 0 .037-.001.056v-.003zm-5.604-1.33c-.688.061-1.223.634-1.223 1.332s.535 1.271 1.218 1.332h.005c.683-.029 1.225-.59 1.225-1.277 0-.019 0-.037-.001-.056v.003c.001-.02.002-.043.002-.067 0-.685-.541-1.243-1.219-1.269h-.002zm12.674-7.598v21.528c-3.023-2.672-2.057-1.787-5.568-5.052l.636 2.22h-13.609c-1.359-.004-2.46-1.106-2.46-2.466 0-.002 0-.004 0-.006v-16.224c0-.002 0-.004 0-.006 0-1.36 1.101-2.462 2.459-2.466h16.081c1.359.004 2.46 1.106 2.46 2.466v.006zm-3.42 11.376c-.042-2.559-.676-4.96-1.77-7.086l.042.09c-.924-.731-2.088-1.195-3.358-1.259l-.014-.001-.168.192c1.15.312 2.15.837 3.002 1.535l-.014-.011c-1.399-.769-3.066-1.222-4.839-1.222-1.493 0-2.911.321-4.189.898l.064-.026c-.444.204-.708.35-.708.35.884-.722 1.942-1.266 3.1-1.56l.056-.012-.12-.144c-1.284.065-2.448.529-3.384 1.269l.012-.009c-1.052 2.036-1.686 4.437-1.728 6.982v.014c.799 1.111 2.088 1.826 3.543 1.826.041 0 .082-.001.123-.002h-.006s.444-.54.804-.996c-.866-.223-1.592-.727-2.093-1.406l-.007-.01c.176.124.468.284.49.3 1.209.672 2.652 1.067 4.188 1.067 1.191 0 2.326-.238 3.36-.668l-.058.021c.528-.202.982-.44 1.404-.723l-.025.016c-.526.703-1.277 1.212-2.144 1.423l-.026.005c.36.456.792.972.792.972.033.001.072.001.111.001 1.461 0 2.755-.714 3.552-1.813l.009-.013z">
-                        </path>
-                    </svg>Discord: Zahide4#3554</div>
-            </div>
-        </div>
+            <a href="#about">
+                <li><span>// </span>about</li>
+            </a>
+            <a href="#testimonials">
+                <li><span>// </span>testimonials</li>
+            </a>
+            <a href="#contact">
+                <li><span>// </span>contact</li>
+            </a>
+        </ul>
     </div>
-    <script src="./particles.js"></script>
-    <script src="./app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="./tilt.js"></script>
-    <script type="text/javascript">
-        VanillaTilt.init(document.querySelector(".box"), {
-            max: 25,
-            speed: 300
-        });
+    <div class="animation">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="animation animation2">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
 
-        //It also supports NodeList
-        VanillaTilt.init(document.querySelectorAll(".box"));
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="container">
+        <div class="main" id="home">
+            <div class="header">
+                <div class="header-info">
+                    <h1 class="title">Hi, I'm<span class="title-zahid"> Zahid</span></h1>
+                    <h1 class="subtitle">Student, aspiring front-end Web developer and technology enthusiast trying to
+                        learn shit.</h1>
+                    <div class="buttons">
+                        <a target="_blank" href="https://github.com/zahide4">
+                            <div class="btn btn2"><i class="fa-brands fa-github"></i> Github</div>
+                        </a>
+                        <a target="_blank" href="https://instagram.com/zahid_e4">
+                            <div class="btn btn1"><i class="fa-brands fa-instagram"></i> Instagram</div>
+                        </a>
+                        </a>
+                        <div id="id" onclick="copy()" class="btn btn3"><i class="fa-brands fa-discord"></i> Zahid#3554
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="logo-box" id="bg">
+                    <canvas id="canvas" width="800" height="800"></canvas>
+                </div>
+
+            </div>
+            <div class="about-me" id="about">
+
+                <div class="about-wrapper">
+                    <h1 class="h1" data-aos="slide-right" data-aos-delay="0" data-aos-offset="100">about me</h1>
+                    <div class="about-para" data-aos="fade" data-aos-delay="200">
+
+                        Making your ideas a reality by giving a head-start to your company with a beautiful website.
+                        <h3 class="h3">I am proficient in:</h3>
+                        <ul class="features tech-rack" data-aos="fade-right" data-aos-delay="100">
+                            <li class="feature tech-rack-item"><i class="fa-brands fa-html5"></i>HTML</li>
+                            <li class="feature tech-rack-item"><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                            <li class="feature tech-rack-item"><i class="fa-brands fa-square-js"></i>Javascript</li>
+                            <li class="feature tech-rack-item"><i class="fa-brands fa-python"></i>Python</li>
+                            <li class="feature tech-rack-item"><i class="fa-brands fa-figma"></i>Figma</li>
+                        </ul>
+                        <h3 class="h3">and have worked with:</h3>
+                        <ul class="features" data-aos="fade-right" data-aos-delay="100">
+                            <li class="feature">
+                                - Lost Client</li>
+                            <li class="feature">
+                                - Parottu</li>
+                            <li class="feature">
+                                - ApexCloud Hosting</li>
+                            <li class="feature">
+                                - Pixel Radio</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="about-me">
+
+                <div class="about-wrapper">
+                    <div id="testimonials"></div>
+                    <h1 class="h1" data-aos="slide-right" data-aos-delay="0" data-aos-offset="100">testimonials</h1>
+                    <div class="about-para" data-aos="fade" data-aos-delay="200">
+                        “Feedback is the breakfast of champions.”
+                        <div class="boxes">
+                            <div class="box">
+                                <div class="t-title">ARandomGuy<span>#3912</span></div>
+                                <div class="t-para">
+                                    <span>" </span>Zahid has been really helpful and exact when it came to my Website
+                                    needs. I was always needing something exact, and he delivered. Five out of five!
+                                    <span>"</span>
+
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="t-title">Orca<span>#0612</span>
+                                </div>
+                                <div class="t-para">
+                                    <span>" </span>Quick Communication, Clean designs and just overall enjoyable to work
+                                    with, He took feedback very well and improved on things I mentioned.
+                                    <span>"</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="about-me">
+
+                <div class="about-wrapper">
+                    <input readonly value="Moz#1884" id="myInput" type="text">
+                    <div id="contact"></div>
+                    <h1 class="h1" data-aos="slide-right" data-aos-delay="0" data-aos-offset="100">Contact</h1>
+                    <div class="about-para" data-aos="fade" data-aos-delay="200">
+                        "Got convinced? here you go"
+                        <div class="buttons contacts">
+                            <a href="mailto:cremier4@gmail.com">
+                                <div class="btn btn2"><i class="fa-solid fa-envelope"></i> Email</div>
+                            </a>
+                            <a target="_blank" href="https://instagram.com/zahid_e4">
+                                <div class="btn btn1"><i class="fa-brands fa-instagram"></i> Instagram</div>
+                            </a>
+                            <div id="id2" onclick="copy2()" class="btn btn3"><i class="fa-brands fa-discord"></i>
+                                Zahid#3554</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+        </script>
+        <script src="./typed.js"></script>
+        <script src="./anime.min.js"></script>
+        <script>
+            AOS.init();
 
 
-    </script>
+            var animation = anime({
+                targets: ".square",
+                keyframes: [
+                    { rotateZ: 360 }
+                ],
+
+                // duration: '20000',
+                autoplay: false,
+            })
+
+
+            anime({
+                targets: ".square",
+                borderRadius: [
+                    { value: 50, easing: 'easeOutSine', duration: 800 },
+                    { value: 1, easing: 'easeInOutQuad', duration: 400 }
+                ],
+                scale: [
+                    { value: .1, easing: 'easeOutSine', duration: 700 },
+                    { value: 1, easing: 'easeInOutQuad', duration: 300 }
+                ],
+                delay: anime.stagger(100, { grid: [10, 10], from: 'first' }),
+                loop: true,
+            })
+
+            window.onscroll = function (e) {
+                animation.seek(window.pageYOffset * 0.2);
+                console.log(window.pageYOffset)
+
+                navAnimation.seek(window.pageYOffset * 0.22)
+            }
+
+
+            function copy() {
+                if (window.innerWidth > 900) {
+                    const userid = document.getElementById("id")
+                    navigator.clipboard.writeText("Zahid#3554");
+                    document.execCommand("copy");
+                    userid.innerHTML = "ID Copied";
+                    setTimeout(function () {
+                        const userid = document.getElementById("id")
+                        userid.innerHTML = `<i class="fa-brands fa-discord"></i> Zahid#3554`;
+                        console.log("hi")
+                    }, 2000);
+                }
+                else {
+                    var copyText = document.getElementById('myInput')
+                    copyText.select();
+                    document.execCommand('copy')
+                    const userid1 = document.getElementById("id")
+
+                    console.log('Copied Text')
+                    userid1.innerHTML = "ID Copied";
+                    setTimeout(function () {
+                        userid1.innerHTML = `<i class="fa-brands fa-discord"></i> Zahid#3554`;
+                        console.log("hi")
+                    }, 1500);
+                }
+            }
+
+            function copy2() {
+                if (window.innerWidth > 900) {
+                    const userid = document.getElementById("id2")
+                    navigator.clipboard.writeText("Zahid#3554");
+                    document.execCommand("copy");
+                    userid.innerHTML = "ID Copied";
+                    setTimeout(function () {
+                        const userid = document.getElementById("id2")
+                        userid.innerHTML = `<i class="fa-brands fa-discord"></i> Zahid#3554`;
+                        console.log("hi")
+                    }, 2000);
+                }
+                else {
+                    var copyText = document.getElementById('myInput')
+                    copyText.select();
+                    document.execCommand('copy')
+                    const userid1 = document.getElementById("id2")
+
+                    console.log('Copied Text')
+                    userid1.innerHTML = "ID Copied";
+                    setTimeout(function () {
+                        userid1.innerHTML = "Zahid#3554";
+                        console.log("hi")
+                    }, 1500);
+                }
+            }
+
+        </script>
+        <script src="./index.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function () {
+                initaite();
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/8fb795b438.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
