@@ -601,7 +601,14 @@ input {
 
 @media only screen and (max-width: 900px) {
 
-    .features {}
+    .testimonials-wrapper::before{
+        height: 150px;
+        content: "";
+        display: block;
+    }
+    .features {
+        width: 100%;
+    }
 
     body {
         overflow-x: hidden;
@@ -674,6 +681,12 @@ input {
         border-radius: 20px;
     }
 
+    .about-me::before {
+        height: 54px;
+        content: "";
+        display: block;
+    }
+
     .about-wrapper {
         padding: 0 0;
     }
@@ -688,21 +701,24 @@ input {
     }
 
     .tech-rack {
-        flex-direction: column;
+        /* flex-direction: column;
+        width: 100%!important;
+        gap: 0.5rem; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .tech-rack-item {
-        flex-direction: row;
-        width: 300px;
+        flex-direction: column;
         justify-content: unset;
         align-items: center;
+        width: 40vw;
 
     }
 
     .tech-rack-item i {
-        font-size: 1.5rem;
-        margin: unset;
-
+        font-size: 2.5rem;
+        margin: unset;  
     }
 
     canvas {
@@ -739,10 +755,10 @@ input {
 
     .boxes {
         flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
         margin-top: 1rem;
         margin-right: 0;
-        padding: 1rem;
-        margin-left: 1rem;
     }
 
     .box {
@@ -756,6 +772,7 @@ input {
         margin-bottom: 1rem;
 
     }
+
     .contacts .btn{
         display: block!important;
         width: 250px!important;
