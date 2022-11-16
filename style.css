@@ -192,6 +192,8 @@ body {
 .container {
     width: 100vw;
     min-height: 100vh;
+    background: linear-gradient(to bottom, #9872df48 0%, #1b1f246e 20%);
+
 }
 
 .navbar {
@@ -201,7 +203,7 @@ body {
     position: fixed;
     top: 0px;
     z-index: 10000;
-    background: #1b1f24;
+    
 }
 
 .nav {
@@ -211,6 +213,8 @@ body {
     align-items: center;
     justify-content: flex-end;
     padding: 1rem;
+    background: #9872df34;
+
 }
 
 .nav li {
@@ -234,6 +238,7 @@ li:hover {
     width: 90%;
     max-width: 1300px;
     margin: auto;
+
 }
 
 .header {
@@ -245,7 +250,6 @@ li:hover {
     margin: auto;
     min-height: 100vh;
     overflow-x: hidden;
-
 }
 
 
