@@ -797,14 +797,14 @@ input {
     }
 
     .contacts .btn::before{
-        content: "";
         position: absolute;
         top: 50%;
         left: -20px;
-        transform: translateY(-50%);
         width: 20px;
-        z-index: -1;
         height: 5px;
         background-color: #24292f;
+        transform: translateY(-50%);
+        z-index: -1;
+        content: "";
     }
 }
