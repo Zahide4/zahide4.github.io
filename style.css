@@ -411,6 +411,12 @@ span {
     position: relative;
 }
 
+.about-me::before {
+    height: 84px;
+    content: "";
+    display: block;
+}
+
 .about-wrapper {
     padding: 0rem 2rem;
     display: flex;
@@ -765,7 +771,7 @@ input {
         margin: unset;
     }
 
-    .logo-box{
+    .logo-box {
         position: unset;
     }
 
@@ -782,12 +788,14 @@ input {
         -o-transform: translate(-50%, -50%);
     }
 
-    .letter{
+    .letter {
         display: none;
     }
-    .z-letter{
+
+    .z-letter {
         display: none;
     }
+
     .navbar {
         justify-content: center;
 
