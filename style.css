@@ -382,7 +382,7 @@ span {
     text-align: center;
     font-family: "Lato";
     border-radius: 7px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: all 0.2s;
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.144);
@@ -399,6 +399,38 @@ span {
 }
 
 
+.content-wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.line-wrapper{
+    width: 8.33333333%;
+    margin: 0 auto;
+}
+
+.line{
+    width: 3px;
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(#452750, #9972df, #452750);
+    position: relative;
+}
+
+.line::before{
+    content: "<>";
+    font-size: 2rem;
+    font-family: "Lato";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #9972df;
+    text-shadow: 0px 0px 100px #9972DF;
+
+}
+
+
 .about-me {
     width: 90%;
     max-width: 800px;
@@ -411,18 +443,14 @@ span {
     position: relative;
 }
 
-.about-me::before {
-    height: 84px;
-    content: "";
-    display: block;
-}
+
 
 .about-wrapper {
     padding: 0rem 2rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
-
+    width: 91.66666663%;
+    margin-top: 1rem;
 }
 
 .h1 {
@@ -442,10 +470,7 @@ span {
     font-family: "Lato";
     max-width: 600px;
     widtH: 90%;
-    font-size: 1.6rem;
-    margin-left: 1rem;
-    border-left: 5px solid #24292f;
-    padding-left: 1rem;
+    font-size: 1.4rem;
 }
 
 .h3 {
@@ -480,7 +505,7 @@ input {
 
 }
 
-
+/* 
 .features::before {
     content: "";
     position: absolute;
@@ -493,7 +518,7 @@ input {
     background-color: #24292f;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.137);
 
-}
+} */
 
 .feature {
     color: white;
@@ -587,7 +612,7 @@ input {
     transform-style: preserve-3d;
     perspective: 1000px;
 }
-
+/* 
 .box::before {
     content: "";
     position: absolute;
@@ -598,7 +623,7 @@ input {
     z-index: -1;
     height: 5px;
     background-color: #24292f;
-}
+} */
 
 .box1 {}
 
@@ -650,11 +675,7 @@ input {
 
 @media only screen and (max-width: 900px) {
 
-    .testimonials-wrapper::before {
-        height: 150px;
-        content: "";
-        display: block;
-    }
+
 
     .features {
         width: 100%;
@@ -731,11 +752,7 @@ input {
         border-radius: 20px;
     }
 
-    .about-me::before {
-        height: 54px;
-        content: "";
-        display: block;
-    }
+
 
     .about-wrapper {
         padding: 0 0;
@@ -762,7 +779,7 @@ input {
         flex-direction: column;
         justify-content: unset;
         align-items: center;
-        width: 40vw;
+        width: 35vw;
 
     }
 
@@ -843,7 +860,7 @@ input {
         position: relative;
     }
 
-    .contacts .btn::before {
+    /* .contacts .btn::before {
         position: absolute;
         top: 50%;
         left: -20px;
@@ -853,5 +870,5 @@ input {
         transform: translateY(-50%);
         z-index: -1;
         content: "";
-    }
+    } */
 }
