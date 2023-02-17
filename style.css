@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Changa+One&family=Jost&family=Lalezar&family=Lato:wght@900&family=Luckiest+Guy&family=Nothing+You+Could+Do&family=Oswald&family=Poiret+One&family=Poppins:wght@300&family=Press+Start+2P&family=Roboto&family=Rubik+Distressed&family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@700&display=swap');
 
 
 * {
@@ -342,10 +343,25 @@ canvas {
 .logo img:hover {}
 
 
+.follow{
+    width: 300px;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: #9872df23;
+    filter: blur(100px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    
+}
+
+
 .title {
     color: white;
     font-size: 3rem;
-    font-family: "Lato";
+    font-family: "poppins";
 }
 
 .subtitle {
@@ -465,7 +481,7 @@ span {
 
 .h1 {
     font-size: 4rem;
-    font-family: "Lato";
+    font-family: "poppins";
     margin-bottom: 2rem;
     background: #9972DF;
     background: -webkit-linear-gradient(to right, #9972DF 0%, #9761AB 100%);
@@ -494,14 +510,52 @@ span {
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     color: white;
     widtH: 300px;
     margin-top: 1rem;
-    background-color: #24292f;
     border-radius: 10px;
     position: relative;
+    gap: 1rem;
     /* box-sizing: border-box; */
+}
+
+
+.feature {
+    color: white;
+    font-size: 1.1rem;
+    background-color: #24292f;
+    border-radius: 5px;
+    font-family: "Lato";
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.37);
+    padding: 0rem 0.5rem;
+}
+
+.feature-item:hover {
+    transform: translate(10px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.37), 0px 30px 60px #9872df25;
+    background-color: #9972DF;
+    color: black;
+}
+
+.feature-item:hover .feature-sub {
+    background-color: #9972DF;
+
+    color: black;
+    text-shadow: 0px 0px 10px #9872dfbe;
+}
+
+.feature-sub {
+    background-color: #24292f;
+    padding: 0.75rem;
+    transition: all 0.2s;
+    font-family: "Lato";
+    font-size: 2rem;
+    border-radius: 5px 0px 0px 5px;
+    color: #9972DF;
 }
 
 
@@ -515,32 +569,6 @@ input {
 
 }
 
-/* 
-.features::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -20px;
-    transform: translateY(-50%);
-    width: 50px;
-    z-index: -1;
-    height: 5px;
-    background-color: #24292f;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.137);
-
-} */
-
-.feature {
-    color: white;
-    font-size: 1.1rem;
-    padding: 0.75rem;
-    background-color: #30363d;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    font-family: "Lato";
-
-    transition: all 0.2s;
-}
 
 .tech-rack {
     display: flex;
@@ -580,7 +608,7 @@ input {
 
 
 
-.feature:hover {
+.tech-rack-item:hover {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137), 0px 0px 60px #9872df52;
     background-color: #9972df;
     color: black;

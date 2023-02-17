@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="follow" id="follow"></div>
     <div class="splash">
         <div class="loader"></div>
     </div>
@@ -292,14 +293,14 @@
                             </ul>
                             <h3 class="h3">and have worked with:</h3>
                             <ul class="features" data-aos="fade-right" data-aos-delay="100">
-                                <li class="feature">
-                                    - Lost Client</li>
-                                <li class="feature">
-                                    - Parottu</li>
-                                <li class="feature">
-                                    - ApexCloud Hosting</li>
-                                <li class="feature">
-                                    - Pixel Radio</li>
+                                <li class="feature feature-item">
+                                    <div class="feature-sub"><i class="fa-solid fa-bolt"></i></div> Lost Client</li>
+                                <li class="feature feature-item">
+                                    <div class="feature-sub"><i class="fa-solid fa-bolt"></i></div> Parottu</li>
+                                <li class="feature feature-item">
+                                    <div class="feature-sub"><i class="fa-solid fa-bolt"></i></div> ApexCloud </li>
+                                <li class="feature feature-item">
+                                    <div class="feature-sub"><i class="fa-solid fa-bolt"></i></div> Pixel Radio</li>
                             </ul>
                         </div>
     
@@ -393,6 +394,16 @@
         <script src="./typed.js"></script>
         <script src="./anime.min.js"></script>
         <script>
+
+
+            const blob = document.getElementById("follow");
+            document.body.onpointermove = event => {
+                const { clientX, clientY } = event
+
+                blob.style.left = `${clientX}px`;
+                blob.style.top = `${clientY}px`;
+            }
+
             AOS.init();
 
 
