@@ -44,17 +44,6 @@ var render = function () {
     renderer.render(scene, camera);
 };
 
-document.body.onscroll = moveCamera;
-
-function moveCamera(){
-
-    mesh.rotation.x += 0.03;
-    mesh.rotation.z += 0.03;
-    mesh.rotation.y += 0.03;
-    
-    renderer.render(scene, camera);
-    console.log(window.pageYOffset)
-}
 
 render();
 
