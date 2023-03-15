@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Mountains+of+Christmas:wght@700&display=swap');
+
+/*````````````````````````````````*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.splash-screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 1;
+    animation-name: fade-out;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.splash-text {
+    background: url("./img/Group\ 2.png") no-repeat center center/cover;
+    width: 50%;
+    height: 50%;
+
+
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+    opacity: 0;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: url("./img/bg1.png") no-repeat center center/cover;
+}
+
+.wrapper {
+    z-index: 1;
+
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main {
+    width: 90%;
+    z-index: 1;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: rem;
+    height: 99vh;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    
+}
+
+.branding {
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box {
+    border-radius: 20px;
+    background: url("./img/Group\ 2.png") no-repeat center center/cover;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(45, 32, 71, 0.233);
+    width: 450px;
+    height: 250px;
+    position: relative;
+    flex-direction: column;
+    transition: all 0.4s;
+    z-index: 7;
+}
+
+.title-box:hover {
+    transform: scale(1.07);
+}
+
+.ipbox {
+    width: 400px;
+    padding: 0.25rem 0rem;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Jost';
+    font-size: 1.6rem;
+    background-color: #211529;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    z-index: 2;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.ipbox:hover {
+    color: cyan;
+}
+
+
+.information {
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    width: 90%;
+    flex-direction: column;
+}
+
+.menu-box {
+    width: 100%;
+}
+
+span {
+    color: aqua;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 1.4rem;
+    font-family: 'Jost';
+    text-align: left;
+    position: relative;
+    justify-self: flex-start;
+}
+
+li {
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Jost';
+    display: inline-block
+}
+
+li::after {
+    content: " ";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: cyan;
+}
+
+#tag {
+    margin-top: 2rem;
+    display: inline;
+}
+
+li:hover {
+    color: white;
+}
+
+.divline {
+    border: 1px solid rgba(255, 255, 255, 0.466);
+    width: 500px;
+    margin: 20px 0px;
+}
+
+br {
+    color: white;
+}
+
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    gap: 2rem;
+    transition: all 0.2s;
+    transition-delay: 1s;
+}
+
+.para {
+    color: white;
+    font-family: 'Jost';
+    font-size: 1.2rem;
+    width: 400px;
+}
+
+#para {
+    margin: 1.5rem 0rem;
+}
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: hsla(276, 100%, 19%, 1);
+    inherits: false;
+}
+
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: hsla(156, 92%, 20%, 1);
+    inherits: false;
+}
+
+.dc {
+    padding: 0.75rem 0rem;
+    font-size: 1.5;
+    background: linear-gradient(0deg, var(--myColor2) 0%, var(--myColor1) 100%);
+    background: -moz-linear-gradient(0deg, var(--myColor2) 0%, var(--myColor1) 100%);
+
+    background: -webkit-linear-gradient(0deg, var(--myColor2) 0%, var(--myColor1) 100%);
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: --myColor1 0.5s, --myColor2 1s ease-in-out;
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.less-pad {
+    font-size: 2rem!important;
+}
+
+#box1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.1)), url("./img/SkyBattle.png");
+}
+
+#box2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.1)), url("./img/battlebox.png");
+}
+
+.dc:hover {
+    --myColor1: hsla(156, 92%, 20%, 1);
+    --myColor2: hsla(276, 100%, 19%, 1);
+}
+
+.copy-button {
+    display: flex;
+    padding: 0.75rem 0rem;
+}
+
+.copy-button>img {
+    height: 30px;
+    margin-left: 40px;
+    width: 30px
+}
+
+#gamemodes {
+    display: flex;
+    width: 100%;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    margin: 2rem 0rem;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    font-size: 2rem;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    color: white;
+    font-family: 'jost';
+    text-shadow: 10px 12px 12px black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+    font-size: 2.5rem;
+}
+
+#box1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url("./img/SkyBattle.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#box2 {
+    /* background: url("./img/battlebox.png") no-repeat center center/cover; */
+    /* backdrop-filter: brightness(50%) */
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url("./img/battlebox.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {}

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Mountains+of+Christmas:wght@700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background: url("./img/bg1.png") no-repeat center center/cover;
+}
+
+.main{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+}	
+
+.branding{
+	width: 80%;
+	margin: 1rem auto;
+}
+
+.title-box{
+	border-radius: 20px;
+    background: url("./img/Group\ 2.png") no-repeat center center/cover;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(45, 32, 71, 0.233);
+    height: 250px;
+    position: relative;
+    flex-direction: column;
+    transition: all 0.4s;
+    z-index: 7;
+}
+
+.ipbox{
+	width: 80%;
+	padding: 1rem;
+	color: white;
+	font-size: 1.5rem;
+	font-family: "Jost";
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	border-radius: 0px 0px 20px 20px;
+	background-color: #211529;
+}
+
+
+.ipbox img{
+	width: 25px;
+	margin-top: 10px;
+}
+
+.information{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1.5rem;
+	margin: auto;
+}
+
+
+.menu-box {
+    width: 100%;
+}
+
+span {
+    color: aqua;
+}
+
+.menu {
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: 'Jost';
+}
+
+li {
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Jost';
+    display: inline-block   
+}
+
+li::after{
+    content: " ";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: cyan;
+}
+
+#tag{
+    margin-top: 2rem;
+    display: inline;
+}
+
+.para{
+	color: white;
+	font-family: "Jost";
+	font-size: 1.2rem;
+	margin: 2rem 0rem;
+}
+
+.texts{
+	gap: 2rem;
+}
+
+
+.boxes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0rem;
+	flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+	width: 100%;
+    font-size: 2rem;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    color: white;
+    font-family: 'jost';
+    text-shadow: 3px 5px 2px black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+	border: 2px solid cyan;
+}
+
+.box:hover{
+    font-size: 2.5rem;
+}
+
+#box1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url("./img/SkyBattle.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#box1:hover{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("./img/SkyBattle.png");
+}
+
+#box2:hover{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+	rgba(0, 0, 0, 0.5)), url("./img/battlebox.png");
+}
+
+#box2 {
+    /* background: url("./img/battlebox.png") no-repeat center center/cover; */
+    /* backdrop-filter: brightness(50%) */
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url("./img/battlebox.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.less-pad{
+	padding: 0;
+	margin: 0;
+	font-size: 2rem;
+}
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: hsla(276, 100%, 19%, 1);
+    inherits: false;
+}
+
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: hsla(156, 92%, 20%, 1);
+    inherits: false;
+}
+
+.dc {
+    padding: 1rem;
+    background: linear-gradient(0deg, var(--myColor2) 0%, var(--myColor1) 100%);
+    margin: 2rem 0rem;
+    background: -moz-linear-gradient(0deg, var(--myColor2) 0%, var(--myColor1) 100%);
+
+    background: -webkit-linear-gradient(0deg, var(--myColor2) 0%, var(--myColor1) 100%);
+    text-align: center;
+    cursor: pointer;
+	width: 200px;
+    transition: --myColor1 0.5s, --myColor2 1s ease-in-out;
+
+    border-radius: 10px;
+}
+
+
+.dc:hover {
+    --myColor1: hsla(156, 92%, 20%, 1);
+    --myColor2: hsla(276, 100%, 19%, 1);
+}

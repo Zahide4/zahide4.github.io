@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Moz</title>
+
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="main">
+        <div class="container">
+            <div onclick="toggleNav()" id="menu" class="menu">Menu</div>
+            <div id="navbar" class="navbar">
+                <ul class="nav">
+                    <a href="./index.html">
+                        <li>Services</li>
+                    </a>
+                    <a href="./index.html">
+                        <li>Testimonials</li>
+                    </a>
+                    <a href="./index.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="./terms-and-conditions.html">
+                        <li>Terms and Conditions</li>
+                    </a>
+                    <li onclick="closeNav()" id="close">Close</li>
+                </ul>
+            </div>
+            <h1 class="h1">Terms and Conditions</h1>
+            <div class="para">
+                By ordering or buying anything from SuperMoz ("SuperMoz", "SM"), you ("Client", "Buyer") automatically
+                agree to all the following terms and conditions ("T&Cs", "Terms and Conditions").
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="f">></div> You are not allowed to chargeback the money for any reason.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> Our sales are final and there are no refunds.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> You cover all the fees when ordering from our Ticket system.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> You don’t have the right to redistribute, no giveaways and no leaking unless
+                    our agreement.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> If you were disrespectful, we have rights to remove your licences or stop
+                    working on your project.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> Staff members have rights to backup the project, but we don’t have the right
+                    to resell it.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> You agree that we have the right to show the project or share it on any of
+                    our social media accounts.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> You are not allowed to make any bad review before asking for help in our
+                    Discord support server.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> Our prices can be changed at any time without announcing it.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> The client agrees to contact us on our Discord support server with any issues
+                    or bugs before leaving a rating.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> We can terminate your licence for any reason.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> When purchasing or dealing with us, you accept our terms and conditions.
+                </div>
+                <div class="feature">
+                    <div class="f">></div> The terms and conditions can be changed at any time.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+
+
+    <script>
+
+        if (window.innerWidth < 900) {
+            const element = document.getElementById("logo")
+            const divv = document.getElementById("head-info")
+            const title = document.getElementById("title")
+            divv.insertBefore(element, title);
+            console.log("working")
+        }
+
+
+        function copy() {
+            navigator.clipboard.writeText("Moz#1884");
+            userid.select();
+            document.execCommand("copy");
+            userid.innerHTML = "ID Copied";
+            setTimeout(function () {
+                const userid = document.getElementById("id")
+                userid.innerHTML = "Moz#1884";
+                console.log("hi")
+            }, 2000);
+        }
+
+
+        function toggleNav() {
+            const navbar = document.getElementById("navbar")
+            const close = document.getElementById("close")
+            const menu = document.getElementById("menu")
+            navbar.style.display = "flex"
+            navbar.style.backgroundColor = "#161616"
+            menu.style.display = "none";
+            close.style.display = "block"
+        }
+
+        function closeNav() {
+            const navbar = document.getElementById("navbar")
+            const close = document.getElementById("close")
+            const menu = document.getElementById("menu")
+            menu.style.display = "block";
+
+            navbar.style.display = "none"
+            close.style.display = "none"
+        }
+
+        function right() {
+            document.getElementById('teams1').scrollBy(3500, 0)
+            right1 = document.getElementById("right")
+            left1 = document.getElementById("left")
+
+            right1.style.opacity = "0";
+            left1.style.opacity = "1"
+        }
+
+        function left() {
+            document.getElementById('teams1').scrollBy(-3500, 0)
+            left1 = document.getElementById("left")
+            right1 = document.getElementById("right")
+
+            left1.style.opacity = "0";
+            right1.style.opacity = "1";
+        }
+
+    </script>
+
+</body>
+
+</html>

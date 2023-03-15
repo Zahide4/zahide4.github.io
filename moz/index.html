@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Moz</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="splash">
+        <div class="loader">
+            <div class="scanner">
+                <h1>Loading...</h1>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="head" id="head">
+                <div id="particles-js"></div>
+                <div class="logo" id="logo">
+                    <img src="./testpfp.jpg" alt="">
+                </div>
+                <div class="head-info" id="head-info">
+                    <h1 id="title" class="h1">Hey, I'm MOZ</h1>
+                    <div class="para">
+                        I am a GFX artist and graphics designer. I work as a freelancer and provide services at a very
+                        reasonable cost!
+                    </div>
+                    <div class="buttons">
+                        <a target="_blank" href="https://discord.gg/XgFUhXNWBs">
+                            <div class="btn">Discord</div>
+                        </a>
+                        <a href="">
+                            <div class="btn">Email</div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div onclick="toggleNav()" id="menu" class="menu">Menu</div>
+            <div id="navbar" class="navbar">
+                <ul class="nav">
+                    <a href="#services">
+                        <li>Services</li>
+                    </a>
+                    <a href="#testimonials">
+                        <li>Testimonials</li>
+                    </a>
+                    <a href="#teams">
+                        <li>Teams</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
+                    <a href="./terms-and-conditions.html">
+                        <li>Terms and Conditions</li>
+                    </a>
+                    <li onclick="closeNav()" id="close">Close</li>
+                </ul>
+            </div>
+            <div class="main-content" id="services">
+
+                <h2 class="h2">Services</h2>
+                <div class="boxes">
+                    <div class="box" id="box1">
+                        <div class="p-title">Discord Setup</div>
+                        <div class="p-info">
+                            <div class="para">
+                                I set up Discord servers for a very affordable cost. The server will be properly
+                                organised, well structured and configured with bots, emojis and custom roles.
+                            </div>
+                            <ul class="features">
+                                <li class="feature">
+                                    <div class="f">+</div> Channels setup
+                                </li>
+                                <li class="feature">
+                                    <div class="f">+</div> Bots setup
+                                </li>
+                                <li class="feature">
+                                    <div class="f">+</div> Roles setup
+                                </li>
+                                <li class="feature">
+                                    <div class="f">+</div> Organized role structure
+                                </li>
+
+                            </ul>
+                            <a target="_blank" href="https://discord.gg/XgFUhXNWBs">
+                                <div class="price">Buy | €4.99</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box" id="box2">
+                        <div class="p-title">Thread Design</div>
+                        <div class="p-info">
+                            <div class="para">
+                                An elegant, attractive and concise thread design for your market, plugin, offer or
+                                anything you like at the cheapest price on the market!
+                            </div>
+                            <ul class="features">
+                                <li class="feature">
+                                    <div class="f">+</div> Beautifully Designed
+                                </li>
+                                <li class="feature">
+                                    <div class="f">+</div> Quick links and redirects
+                                </li>
+                                <li class="feature">
+                                    <div class="f">+</div> Roles setup
+                                </li>
+                                <li class="feature">
+                                    <div class="f">+</div> Organized role structure
+                                </li>
+
+                            </ul>
+                            <a target="_blank" href="https://discord.gg/XgFUhXNWBs">
+                                <div class="price">Buy | €8.99</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <div id="testimonials" class="testimonials">
+                    <h2 class="h2">Testimonials</h2>
+                    <div class="boxes2">
+                        <div class="box2" id="b1">
+                            <img src="./t2bg.svg" class="tbg" alt="">
+                            <img src="./star.png" alt="" class="star">
+                            <div class="t-text">
+                                Great, the end result was amazing and the support was really fast and really helpful!
+                            </div>
+                            <div class="t-author">By Lucas @ Network</div>
+                        </div>
+                        <div class="box2" id="b2">
+                            <img src="./t3bg.svg" class="tbg" alt="">
+                            <img src="./star.png" alt="" class="star">
+
+                            <div class="t-text">
+                                Really fast creation. I absolutely love the thread, it looks professionally made.
+                            </div>
+                            <div class="t-author">By Jake @ Network</div>
+
+                        </div>
+                        <div class="box2" id="b3">
+                            <img src="./t1bg.svg" class="tbg" alt="">
+                            <img src="./star.png" alt="" class="star">
+
+                            <div class="t-text">
+                                Quick and fast, and responded to my dms/questions quick. The server was just perfect!
+                            </div>
+                            <div class="t-author">By Dave @ Network</div>
+
+                        </div>
+                        <div class="box2" id="b4">
+                            <img src="./t4bg.svg" class="tbg" alt="">
+                            <img src="./star.png" alt="" class="star">
+
+                            <div class="t-text">
+                                Overall really clean design. The thread looks really appealing. Really worth it!
+                            </div>
+                            <div class="t-author">By Drake @ Network</div>
+
+                        </div>
+                        <div class="box2" id="b5">
+                            <img class="tbg" src="./t5bg.svg" alt="">
+                            <img src="./star.png" alt="" class="star">
+
+                            <div class="t-text">
+                                Never would've thought I would get such a nice discord server setup without spending a
+                                lot!
+                            </div>
+                            <div class="t-author">By Anthony @ Network</div>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="teams-wrapper" id="teams">
+                    <h2 class="h2">Teams I work with</h2>
+
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./moz.webp" alt="" class="team-img">
+                                <div class="team-name">Owner/Founder</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./devroom.webp" alt="" class="team-img">
+                                <div class="team-name">Freelancer</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./devnics.webp" alt="" class="team-img">
+                                <div class="team-name">Freelancer</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./candor.webp" alt="" class="team-img">
+                                <div class="team-name">Freelancer</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./orbitalstudios.webp" alt="" class="team-img">
+                                <div class="team-name">Freelancer</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./mixelate.webp" alt="" class="team-img">
+                                <div class="team-name">Freelancer</div>
+                            </div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <br>
+
+
+                <div class="contact" id="contact">
+                    <h2 class="h2">Contact</h2>
+
+                    <div class="c-boxes">
+                        <h3 class="h3">
+                            You will need to join my Discord server to place orders. You'll get additional
+                            info there.
+                        </h3>
+                        <div class="contact-boxes">
+                            <a target="_blank" href="https://discord.gg/XgFUhXNWBs">
+                                <div class="c-box">
+                                    <img src="./discord.svg" alt="" class="dc">
+                                    Discord
+                                </div>
+                            </a>
+
+                            <div onclick="copy()" class="c-box" id="id">
+                                <!-- <img src="./discord.svg" alt="" class="dc"> -->
+                                Moz#1884
+                            </div>
+                            <input readonly value="Moz#1884" id="myInput" type="text">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a target="_blank" href="https://zahide4.github.io">
+            <div class="credit">Website by <div class="f">Zahid</div>
+            </div>
+        </a>
+    </div>
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            slidesPerView: 3,
+            direction: 'horizontal',
+            allowSlideNext: true,
+            allowSlidePrev: true,
+            loop: true,
+            spaceBetween: 20,
+            centeredSlides: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                },
+                900: {
+                    slidesPerView: 3,
+                }
+                
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        if (window.innerWidth < 900) {
+            const element = document.getElementById("logo")
+            const divv = document.getElementById("head-info")
+            const title = document.getElementById("title")
+            divv.insertBefore(element, title);
+            console.log("working")
+        }
+
+
+        function scrollRight() {
+
+        }
+
+
+        function copy() {
+            if (window.innerWidth > 900) {
+                const userid = document.getElementById("id")
+                navigator.clipboard.writeText("Moz#1884");
+                document.execCommand("copy");
+                userid.innerHTML = "ID Copied";
+                setTimeout(function () {
+                    const userid = document.getElementById("id")
+                    userid.innerHTML = "Moz#1884";
+                    console.log("hi")
+                }, 2000);
+            }
+            else {
+                var copyText = document.getElementById('myInput')
+                copyText.select();
+                document.execCommand('copy')
+                const userid1 = document.getElementById("id")
+
+                console.log('Copied Text')
+                userid1.innerHTML = "ID Copied";
+                setTimeout(function () {
+                    userid1.innerHTML = "Moz#1884";
+                    console.log("hi")
+                }, 1500);
+            }
+        }
+
+
+        function toggleNav() {
+            const navbar = document.getElementById("navbar")
+            const close = document.getElementById("close")
+            const menu = document.getElementById("menu")
+            navbar.style.display = "flex"
+            navbar.style.backgroundColor = "#161616"
+            menu.style.display = "none";
+            close.style.display = "block"
+        }
+
+        function closeNav() {
+            const navbar = document.getElementById("navbar")
+            const close = document.getElementById("close")
+            const menu = document.getElementById("menu")
+            menu.style.display = "block";
+
+            navbar.style.display = "none"
+            close.style.display = "none"
+        }
+
+        function right() {
+            document.getElementById('teams1').scrollBy(0, 0)
+            right1 = document.getElementById("right")
+            left1 = document.getElementById("left")
+
+            // right1.style.opacity = "0";
+            // left1.style.opacity = "1"
+        }
+
+        function left() {
+            document.getElementById('teams1').scrollBy(-450, 0)
+            left1 = document.getElementById("left")
+            right1 = document.getElementById("right")
+
+            // left1.style.opacity = "0";
+            // right1.style.opacity = "1";
+        }
+
+    </script>
+
+</body>
+
+</html>
