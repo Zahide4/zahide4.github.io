@@ -343,7 +343,7 @@ canvas {
 .logo img:hover {}
 
 
-.follow{
+.follow {
     width: 300px;
     aspect-ratio: 1;
     position: absolute;
@@ -354,7 +354,7 @@ canvas {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     pointer-events: none;
-    
+
 }
 
 
@@ -494,7 +494,7 @@ span {
 .about-para {
     color: white;
     font-family: "Lato";
-    widtH: 90%;
+    widtH: 100%;
     font-size: 1.4rem;
 }
 
@@ -570,7 +570,7 @@ input {
 
 
 
-.project-box{
+.project-box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -580,11 +580,11 @@ input {
     width: 100%;
 }
 
-.project a{
+.project a {
     color: white;
 }
 
-.project{
+.project {
     width: 100%;
     max-width: 400px;
     height: 450px;
@@ -596,13 +596,13 @@ input {
     background-color: #24292f;
 }
 
-.p-img{
+.p-img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
     position: relative;
 }
 
-.project::before{
+.project::before {
     opacity: 0;
     content: "Go to site";
     position: absolute;
@@ -623,12 +623,12 @@ input {
     pointer-events: none;
 }
 
-.project:hover::before{
+.project:hover::before {
     opacity: 1;
 
 }
 
-.star{
+.star {
     width: 140px;
     margin: auto;
     display: block;
@@ -641,7 +641,7 @@ input {
     background-color: #24292f;
 }
 
-.p-info{
+.p-info {
     padding: 1rem;
     border-radius: 10px;
     display: flex;
@@ -651,14 +651,14 @@ input {
     gap: 0.5rem;
 }
 
-.p-name{
+.p-name {
     font-size: 1.5rem;
     font-family: "Poppins";
     font-weight: BOld;
     color: white;
 }
 
-.p-para{
+.p-para {
     text-align: center;
     font-family: "Jost";
     font-size: 1rem;
@@ -693,7 +693,7 @@ input {
 }
 
 .tech-rack-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px)!important;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.137), 0px 30px 60px #9872df25;
     color: black;
 }
@@ -883,14 +883,14 @@ input {
         width: 100%;
     }
 
-    .about-wrapper{
+    .about-wrapper {
         padding: 0 1rem;
         width: 100%;
 
     }
 
     .h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .about-para {
@@ -1010,4 +1010,17 @@ input {
         z-index: -1;
         content: "";
     } */
+
+    .project {
+        height: 390px;
+    }
+
+    .project:hover::before {
+        opacity: 0;
+    }
+
+    .star {
+        bottom: 185px;
+
+    }
 }
