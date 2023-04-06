@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Changa+One&family=Jost&family=Lalezar&family=Lato:wght@900&family=Luckiest+Guy&family=Nothing+You+Could+Do&family=Oswald&family=Poiret+One&family=Poppins:wght@300&family=Press+Start+2P&family=Roboto&family=Rubik+Distressed&family=Wallpoet&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Changa+One&family=poppins&family=Lalezar&family=poppins:wght@900&family=Luckiest+Guy&family=Nothing+You+Could+Do&family=Oswald&family=Poiret+One&family=Poppins:wght@300&family=Press+Start+2P&family=Roboto&family=Rubik+Distressed&family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=poppins&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Jost";
+    font-family: "poppins";
     box-sizing: border-box;
     scroll-behavior: smooth;
     user-select: none;
@@ -16,8 +18,8 @@
 :root {
     --main-accent: rgb(153, 114, 223);    
     --main-color: 153, 114, 223;
-    --main-bg: #1b1f24;
-    --sec-bg: #24292f;
+    --main-bg: #13161a;
+    --sec-bg: #1b1f24;
     --para-text: #fafafa;
     --sec-text: #c4c4c4;
 }
@@ -187,7 +189,6 @@ body {
     width: 100vw;
     min-height: 100vh;
     background: linear-gradient(to bottom, rgba(var(--main-color), 0.2) 0%, var(--main-bg) 20%);
-
 }
 
 .main {
@@ -202,10 +203,24 @@ body {
     justify-content: center;
     align-items: center;
     width: 90%;
-    max-width: 900px;
+    max-width: 1100px;
     margin: auto;
     min-height: 100vh;
     overflow-x: hidden;
+    position: relative;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    box-shadow: inset 0px -100px 100px #13161a;
+
+    background: url("1638154.jpg") no-repeat center center/cover;
 }
 
 
@@ -228,7 +243,9 @@ body {
     position: relative;
 }
 
-
+.bg-img{
+    width:60%;
+}
 canvas {
     background-color: none;
     width: 100%;
@@ -255,7 +272,7 @@ canvas {
 
 .square {
     aspect-ratio: 1/1;
-    font-family: "Lato";
+    font-family: "poppins";
     color: var(--main-accent);
     background-color: var(--main-accent);
     /* border-radius: 20px; */
@@ -264,6 +281,9 @@ canvas {
 .header-info {
     max-width: 40%;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
 }
 
 .logo-box {
@@ -298,7 +318,7 @@ canvas {
 .logo img:hover {}
 
 
-.follow {
+/* .follow {
     width: 300px;
     aspect-ratio: 1;
     position: absolute;
@@ -310,26 +330,27 @@ canvas {
     border-radius: 50%;
     pointer-events: none;
 
-}
+} */
 
 
 .title {
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: "poppins";
 }
 
 .subtitle {
-    color: var(--sec-text);
+    color: white;
+    font-weight: 400;
+    line-height: 2rem;
     font-size: 1.2rem;
-    font-family: "jost";
+    font-family: "poppins";
     margin: 0.5rem 0rem;
 }
 
 span {
     color: var(--main-accent);
-    font-family: "Lato";
-    text-shadow: 0px 0px 30px rgba(var(--main-color), 0.5);
+    font-family: "poppins";
 }
 
 .buttons {
@@ -345,6 +366,13 @@ span {
     grid-column: 1/3;
 }
 
+.p11{
+    font-family: "Poppins";
+    font-weight: 400;
+    width: 100%;
+    max-width: 600px;
+}
+
 .btn {
     padding: 0.5rem 1rem;
     background-color: var(--sec-bg);
@@ -352,7 +380,8 @@ span {
     /*display: inline-block;
     */
     text-align: center;
-    font-family: "Lato";
+    font-family: "poppins";
+    font-weight: bold;
     border-radius: 7px;
     font-size: 1.3rem;
     transition: all 0.2s;
@@ -402,7 +431,7 @@ span {
 .line-wrapper::before {
     content: "<>";
     font-size: 2rem;
-    font-family: "Lato";
+    font-family: "poppins";
 
     position: absolute;
     top: 50%;
@@ -444,7 +473,7 @@ span {
 
 .about-para {
     color: var(--para-text);
-    font-family: "Lato";
+    font-family: "poppins";
     widtH: 100%;
     font-size: 1.4rem;
 }
@@ -475,7 +504,7 @@ span {
     font-size: 1.1rem;
     background-color: var(--sec-bg);
     border-radius: 5px;
-    font-family: "Lato";
+    font-family: "poppins";
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -502,7 +531,7 @@ span {
     background-color: #24292f;
     padding: 0.75rem;
     transition: all 0.2s;
-    font-family: "Lato";
+    font-family: "poppins";
     font-size: 2rem;
     border-radius: 5px 0px 0px 5px;
     color: var(--main-accent);
@@ -538,7 +567,7 @@ input {
 .project {
     width: 100%;
     max-width: 400px;
-    height: 450px;
+    height: 470px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
@@ -561,7 +590,7 @@ input {
     top: 0;
     width: 100%;
     height: 310px;
-    font-family: "Lato";
+    font-family: "poppins";
     color: var(--para-text);
     font-size: 1.2rem;
     border-radius: 10px 10px 0px 0px;
@@ -584,7 +613,7 @@ input {
     margin: auto;
     display: block;
     position: absolute;
-    bottom: 140px;
+    bottom: 170px;
     padding: 5px;
     left: 50%;
     transform: translateX(-50%);
@@ -611,7 +640,7 @@ input {
 
 .p-para {
     text-align: center;
-    font-family: "Jost";
+    font-family: "poppins";
     font-size: 1rem;
     color: var(--sec-text);
 }
