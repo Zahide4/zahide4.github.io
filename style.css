@@ -608,7 +608,7 @@ input {
 
 }
 
-.star {
+/* .star {
     width: 140px;
     margin: auto;
     display: block;
@@ -619,7 +619,7 @@ input {
     transform: translateX(-50%);
     border-radius: 0px 0px 5px 5px;
     background-color: var(--sec-bg);
-}
+} */
 
 .p-info {
     padding: 1rem;
