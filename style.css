@@ -992,7 +992,7 @@ input {
     } */
 
     .project {
-        height: 450px;
+        height: auto;
     }
 
     .project:hover::before {
@@ -1000,7 +1000,7 @@ input {
     }
 
     .star {
-        bottom: 230px;
+        top: 0
 
     }
 }
