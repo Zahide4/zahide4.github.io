@@ -1,0 +1,586 @@
+/* Copyright Zahid @ https://zahide4.github.io */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Jost&family=Roboto:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.wrapper {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.information {
+    /* width: 80%; */
+
+    max-width: 1300px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: none !important;
+}
+
+.close {
+    display: none;
+}
+
+.navbar {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001122;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.head {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("./img/mountains-rocks-night-starry-sky-scenery-illustration-macos-1920x1080-3810.jpg") no-repeat center center/cover;
+    position: relative;
+    box-shadow: inset 0px 0px 100px rgba(26, 24, 100, 0.425);
+}
+
+.head::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url("./img/wave-haikei\ \(2\).svg") no-repeat center center/cover;
+}
+
+.head::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url("./img/sidemountainbutbigger.svg") no-repeat center center/cover;
+    opacity: 0.9;
+    backdrop-filter: blur(5px) brightness(60%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%) brightness(60%);
+    z-index: 1;
+}
+
+.info {
+    z-index: 2;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+}
+
+li {
+    padding: 0.5rem 0rem;
+    color: white;
+    font-family: "Jost";
+    cursor: pointer;
+    width: 130px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+li:hover {
+    background-color: #0b2c4e;
+    border-radius: 7px;
+    color: cyan;
+}
+
+
+.logo {
+    /* display: grid; */
+    display: flex;
+    z-index: 2;
+    width: 50vw;
+    /* place-items: center; */
+}
+
+.logo img {
+    width: 100%;
+    transform:
+        perspective(800px) rotateY(-6deg) translateY(-17px) rotateX(0deg) scale(1.2);
+    filter: blur(0);
+    opacity: 1;
+    transition: 0.6s ease all;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(1, 1, 20, 0.651);
+}
+
+
+.logo img:hover {
+    transform:
+        perspective(800px) translateX(-20px) rotateY(-10deg) scale(1.4) rotateX(5deg);
+}
+
+.h1 {
+    font-size: 6rem;
+    color: cyan;
+    text-shadow: 3px 4px black;
+    font-family: "Bebas Neue";
+}
+
+.h2 {
+    color: #f1f1f1;
+    font-family: 1.5rem;
+    width: 20rem;
+
+}
+
+.features {
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #0c1620d2;
+    margin: 2rem 0rem;
+    border-radius: 20px;
+    width: 70%;
+    border: 3px solid cyan;
+    box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.185);
+}
+
+.feature {
+    font-family: Jost;
+    color: white;
+}
+
+.wrapper2 {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: url('./img/circlebg.svg') no-repeat center center/cover;
+    color: white;
+}
+
+.main {
+    width: 80%;
+    max-width: 1300px;
+    z-index: 1;
+    position: relative;
+}
+
+.why-apex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 800px;
+    margin: 3rem 0rem;
+    box-shadow: 7px 9px #04111d, 9px 11px cyan, 0px 0px 40px rgba(0, 255, 255, 0.295);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.boxes:hover {
+    box-shadow: none;
+    transform: translate(9px, 11px);
+
+}
+
+.box {
+    padding: 1rem;
+    /* border: 3px solid cyan; */
+    height: 200px;
+    background-color: #04111d;
+    border: 2px solid cyan;
+
+}
+
+.h3 {
+    font-family: "Jost";
+    font-size: 2rem;
+    color: cyan;
+    margin: 0.5rem 0rem;
+}
+
+.para {
+    font-size: 1.2rem;
+    font-family: "Jost";
+}
+
+.plans {
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plan-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.plan-box {
+    border-radius: 43px;
+    background: linear-gradient(145deg, #001224, #000f1f);
+    box-shadow: 23px 23px 50px #00070e,
+        -23px -23px 50px #001b36;
+    padding: 2rem;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+.plan-box:hover {
+    box-shadow: 15px 15px 30px #000b15,
+        -15px -15px 30px #00172f;
+
+}
+
+.plan-features {
+    margin: 1rem 0rem;
+    background-color: #00070e;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.cyan {
+    color: cyan;
+    display: inline-block;
+}
+
+.price {
+    color: cyan;
+    background-color: #00070e;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    width: 300px;
+    z-index: 1;
+    transition: all 0.2s;
+    padding: 0rem 1rem;
+    background-color: #00070e;
+    /* border: 3px solid cyan; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: cyan;
+    font-family: "Bungee";
+    font-size: 2rem;
+    box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.274);
+}
+
+.btn:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.h4 {
+    font-size: 4rem;
+    margin-top: 4rem;
+    font-family: "Bebas Neue";
+    color: cyan;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.fancy {
+    background-color: transparent;
+    border: 2px solid cyan;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #001122;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+}
+
+.fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: cyan;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+    font-size: 1.5rem;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: cyan;
+}
+
+.fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #001122;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #001122;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #001122;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+    color: black;
+    background: cyan;
+}
+
+.fancy:hover::before {
+    width: 0.9375rem;
+    background: black;
+}
+
+.fancy:hover .text {
+    color: black;
+    padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+
+.footer {
+    font-size: 1rem;
+    font-family: "Jost";
+    position: fixed;
+    z-index: 13;
+    width: 100vw;
+    bottom: 0px;
+    display: block;
+    text-align: center;
+    opacity: 0.8;
+    margin: auto;
+    background-color: #00070e;
+    color: white;
+
+}
+
+.footer a {
+    color: cyan
+}
+
+@media only screen and (max-width: 900px) {
+    * {
+        user-select: none;
+    }
+
+    .wrapper {
+        width: 100vw
+    }
+
+    .head {
+        max-width: none;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .information {
+        flex-direction: column;
+        max-width: none;
+
+        width: 100vw;
+    }
+
+    .main {
+        max-width: none;
+        width: 100vw;
+    }
+
+    .plan-boxes {
+        flex-direction: column;
+    }
+
+    .plan-box {
+        width: 70%;
+    }
+
+    .boxes {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .box {
+        height: 250px;
+    }
+
+    .btn {
+        width: 60vw;
+        font-size: 1.2rem;
+        position: relative;
+        z-index: 1;
+        padding: 1rem;
+    }
+
+    .info {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h1 {
+        font-size: 4rem;
+    }
+
+    .h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo img {
+        width: 80vw;
+    }
+
+    .h4 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        position: fixed;
+        height: auto;
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        margin-bottom: 3rem;
+        text-align: center;
+        position: fixed;
+        top: 0px;
+        z-index: 10;
+        width: 100vw;
+        padding: 1rem
+    }
+
+    .nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .close {
+        display: block;
+    }
+}

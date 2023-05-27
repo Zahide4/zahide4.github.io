@@ -1,0 +1,227 @@
+<!-- Copyright Zahid @ https://zahide4.github.io/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexCloud</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar" id="menu">
+            <ul class="nav">
+                <a href="#head">
+                    <li>Info</li>
+                </a>
+                <a href="#why">
+                    <li>Why ApexCloud</li>
+                </a>
+                <a href="#plans">
+                    <li>Plans</li>
+                </a>
+                <a href="#redirects">
+                    <li>Redirects</li>
+                </a>
+                <li class="close" onclick="toggleMenuOff()">Close</li>
+            </ul>
+        </div>
+        <div class="head" id="head">
+            <div class="information">
+                <div class="info">
+                    <h1 class="h1">APEX CLOUD</h1>
+                    <h2 class="h2">Ever wanted a free discord bot? This is your chance.</h2>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="cyan">✓</div> Free and Paid plans
+                        </div>
+                        <div class="feature">
+                            <div class="cyan">✓</div> Easy to use
+                        </div>
+                        <div class="feature">
+                            <div class="cyan">✓</div> Great uptimes
+                        </div>
+                        <div class="feature">
+                            <div class="cyan">✓</div> Pterodactyl Panel
+                        </div>
+
+                    </div>
+                    <a href="https://client.apexcloud.be/login">
+                        <div class="btn">Get Started --></div>
+                    </a>
+                    <div onclick="toggleMenu()" class="btn menu">Menu</div>
+
+                </div>
+                <div class="logo">
+                    <img src="./img/server.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="wrapper2" id="why">
+            <h4 class="h4">Why ApexCloud?</h4>
+            <div class="main">
+                <div class="why-apex">
+                    <div class="boxes">
+                        <div class="box" id="box1">
+                            <h3 class="h3">Easy to use</h3>
+                            <div class="para">
+                                We're aiming to make everyhing self-explanatory. Making it easier to navigate & manage
+                                your bot.
+                            </div>
+                        </div>
+                        <div class="box" id="box2">
+                            <h3 class="h3">Good uptimes</h3>
+                            <div class="para">
+                                We thrive to aim at a good reasonable uptime for free! Paid plans will have even better
+                                uptimes.
+                            </div>
+                        </div>
+                        <div class="box" id="box3">
+                            <h3 class="h3">We use Pterodactyl</h3>
+                            <div class="para">
+                                Pterodactyl is easy to use. You can view
+                                it's code whenever you like it on their github page.
+                            </div>
+                        </div>
+                        <div class="box" id="box4">
+                            <h3 class="h3">Plans for everyone</h3>
+                            <div class="para">
+                                We have Free and super affordable Paid plans which allows everyone to start their own
+                                dream bot.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="plans" class="plans">
+                    <h4 style="margin-bottom: 2rem;" class="h4">Plans</h4>
+
+                    <div class="plan-boxes">
+
+                        <div class="plan-box">
+                            <h3 class="h3">Free Plan</h3>
+                            <div class="para">Host your Discord bot for free. Good for individual/small projects.</div>
+                            <div class="plan-features">
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> 0.4 vCores
+                                </div>
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> 290MB RAM
+                                </div>
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> 260MB disk space
+                                </div>
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> 1 Port
+                                </div>
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> 7-day renew
+                                </div>
+
+                            </div>
+                            <h3 class="price">$0.00/mon</h3>
+                        </div>
+                        <div class="plan-box">
+                            <h3 class="h3">Paid</h3>
+                            <div class="para">Host your bot with maximum power! Good for large projects</div>
+                            <div class="plan-features">
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> 1 vCore
+                                </div>
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> 900MB RAM
+                                </div>
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> 1000MB disk space
+                                </div>
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> 2 Ports
+                                </div>
+                                <div class="plan-feature">
+                                    <div class="cyan">✓</div> No renew
+                                </div>
+                            </div>
+                            <h3 class="price">$5.00/mon</h3>
+                        </div>
+
+                    </div>
+                    <a href="https://client.apexcloud.be/login">
+                        <div class="btn">Get Started --></div>
+                    </a>
+
+                </div>
+
+                <h4 class="h4">Redirects:</h4>
+
+                <div class="contact" id="redirects">
+                    <div class="buttons">
+
+                        <a class="fancy" target="_blank" href="https://discord.gg/3RVX8cVtzJ">
+                            <span class="top-key"></span>
+                            <span class="text">Join our Discord</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+
+                        <a class="fancy" target="_blank" href="https://client.apexcloud.be/">
+                            <span class="top-key"></span>
+                            <span class="text">Control Panel</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+                        <a class="fancy" target="_blank" href="https://control.apexcloud.be/">
+                            <span class="top-key"></span>
+                            <span class="text">Client Panel</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+
+
+                        <a class="fancy" target="_blank" href="https://status.apexcloud.be/">
+                            <span class="top-key"></span>
+                            <span class="text">Status Info</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+
+
+                        <a class="fancy" href="#">
+                            <span class="top-key"></span>
+                            <span class="text">Email Us</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">Website by <a target="_blank" href="https://zahide4.github.io">Zahid.</a></div>
+    <script>
+
+
+        function toggleMenu() {
+            const menu = document.getElementById("menu")
+            menu.style.display = "block"
+        }
+
+        function toggleMenuOff() {
+            const menu = document.getElementById("menu")
+            menu.style.display = "none";
+
+        }
+
+    </script>
+</body>
+
+</html>
