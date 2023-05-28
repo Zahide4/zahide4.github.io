@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zahid</title>
-    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/8fb795b438.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -42,8 +43,8 @@
         </div>
 
         <div class="about-me-container">
-            <div class="about-me">
-                <div class="heading">about me</div>
+            <div class="about-me"  data-aos="fade-up">
+                <div class="heading" data-aos="fade-up">about me</div>
 
                 <div class="about-para">
                     I make websites, web apps and design modern UI/UX. My passion lies in transforming imagination into
@@ -53,7 +54,7 @@
 
                 <div class="line"></div>
 
-                <div class="techstack">
+                <div class="techstack" data-aos="fade-up">
                     <div class="tech-set1">
                         <div class="tech top-tech"><i class="fa-brands fa-html5"></i>Html5</div>
                         <div class="tech top-tech"><i class="fa-brands fa-css3-alt"></i>Css3</div>
@@ -74,13 +75,13 @@
 
         <div class="projects-container">
             <div class="projects">
-                <div class="heading">projects</div>
+                <div class="heading" data-aos="fade-up">projects</div>
                 <div class="projects-box">
 
                     <a data-aos="fade-left" href="./moz/index.html" target="_blank" class="project">
                         <img src="./assets/moz.png" alt="Apex Cloud" class="p-img">
 
-                        <div class="p-info">
+                        <div class="p-info" >
                             <div class="p-info1">
                                 <div class="p-name">Super Moz</div>
                                 <div class="p-para">Moz is a GFX designer who designs YouTube banners, Twitter
@@ -94,7 +95,7 @@
                         </div>
                     </a>
 
-                    <a data-aos="fade-left" href="./apexhosting/index.html" target="_blank" class="project">
+                    <a data-aos="fade-right" href="./apexhosting/index.html" target="_blank" class="project">
                         <img src="./assets/apex.png" alt="Apex Cloud" class="p-img">
 
                         <div class="p-info">
@@ -127,7 +128,7 @@
                         </div>
                     </a>
 
-                    <a data-aos="fade-left" href="./dykmg/index.html" target="_blank" class="project">
+                    <a data-aos="fade-right" href="./dykmg/index.html" target="_blank" class="project">
                         <img src="./assets/dykmg.png" alt="Apex Cloud" class="p-img">
 
                         <div class="p-info">
@@ -325,6 +326,9 @@
             }, 1500);
         }
     }
+</script>
+<script>
+    AOS.init();
 </script>
 
 </html>
