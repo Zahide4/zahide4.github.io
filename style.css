@@ -652,6 +652,16 @@ a {
         width: 450px;
     }
     .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .section1{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
     }
 }
 
