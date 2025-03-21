@@ -85,7 +85,6 @@ let t7 = gsap.timeline({
         start: '-200% center',
         end: '400% center',
         scrub: true,
-        markers: true,
     },
 
 });
@@ -170,7 +169,7 @@ splitTypes2.forEach((char, i) => {
             start: 'top 80%',
             end: 'top 50%', 
             scrub: true,
-            markers: true
+            markers: false
         },
         stagger: 0.1, 
         scaleY: 0,
