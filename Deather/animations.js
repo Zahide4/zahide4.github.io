@@ -28,7 +28,6 @@ let t2 = gsap.timeline({
         start: 'top 90%',
         end: 'center 50%',
         scrub: true,
-        markers: true
     },
 
 })
@@ -40,7 +39,6 @@ let t8 = gsap.timeline({
         start: 'top 90%',
         end: 'center 50%',
         scrub: true,
-        markers: true
     },
 
 });
@@ -52,7 +50,6 @@ let t9 = gsap.timeline({
         start: 'top 90%',
         end: 'top 50%',
         scrub: true,
-        markers: true
     },
 
 });
