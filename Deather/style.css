@@ -27,7 +27,7 @@ canvas {
     font-family: "Noto Serif";
     letter-spacing: 3px;
     font-size: 1rem;
-    z-index: 100;
+    z-index: 500;
     inset: 0;
     pointer-events: none;
     animation-name: loading;
@@ -558,7 +558,7 @@ body {
 }
 
 .voice-note audio {
-    z-index: 100;
+    z-index: 400;
 }
 
 .animated-title5 {
