@@ -28,7 +28,31 @@ let t2 = gsap.timeline({
         start: 'top 90%',
         end: 'center 50%',
         scrub: true,
+        markers: true
+    },
 
+})
+
+let t8 = gsap.timeline({
+
+    scrollTrigger: {
+        trigger: '.animated-title4',
+        start: 'top 90%',
+        end: 'center 50%',
+        scrub: true,
+        markers: true
+    },
+
+});
+
+let t9 = gsap.timeline({
+
+    scrollTrigger: {
+        trigger: '.animated-title5',
+        start: 'top 90%',
+        end: 'top 50%',
+        scrub: true,
+        markers: true
     },
 
 });
@@ -130,6 +154,18 @@ t6.to('.animated-paragraph3', {
 t7.to('.animated-quote', {
     x: '150vw',
 })
+
+t8.to('.animated-title4', {
+    y: -100,
+    filter: 'blur(0px)'
+})
+
+t9.to('.animated-title5', {
+    y: -50,
+    filter: 'blur(0px)',
+    x: 100
+})
+
 
 
 
