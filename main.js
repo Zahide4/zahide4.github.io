@@ -27,7 +27,6 @@ ScrollTrigger.create({
     animation: tween,
     scrub: 1,
     invalidateOnRefresh: true,
-    markers: true
 })
 
 
