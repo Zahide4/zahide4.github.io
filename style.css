@@ -805,15 +805,23 @@ a {
     html {
         user-select: none;
     }
+    .header-title {
+        font-size: 3rem;
+        line-height: 3.5rem;
 
+    }
     .main {
         overflow-x: hidden;
     }
-
+    .header-title span {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
     .main {
         padding-top: 6rem;
     }
     .header {
+        padding-inline: 1rem;
     }
     .header-buttons {
     }
