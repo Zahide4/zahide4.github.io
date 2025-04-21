@@ -2,333 +2,541 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahid</title>
+    <title>Zahid.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/8fb795b438.js" crossorigin="anonymous"></script>
-    
 </head>
 
 <body>
-    <div class="main">
-        <div class="header-container">
-            <div class="header">
+    <div class="main" id="home">
 
-                <div class="header-info">
-                    <div class="title">I'm Zahid</div>
-                    <div class="subtitle">
-                        Student, aspiring front-end Web developer and technology enthusiast trying to learn shit.
+        <div class="header wrapper">
+            <div class="header-info">
+                <div class="header-title">I make the <span>web,</span> <br>
+                    one line at a time.</div>
+
+                <div class="header-para">Student, aspiring front-end Web developer and technology enthusiast trying to
+                    learn shit. </div>
+
+                <div class="header-buttons">
+                    <a href="#projects"><div class="button first-button"><i class="fa-solid fa-laptop-code"></i> projects</div></a>
+                    <a href="#contact">
+                    <div class="button btn"><i class="fa-solid fa-user-group"></i> my socials</div>
+                </a>
+
+                </div>
+            </div>
+
+            <div class="nav">
+                <div class="nav-items">
+                    <div class="item"><a href="#home">home.</a></div>
+                    <div class="item"><a href="">about.</a></div>
+                    <div class="item"><a href="">projects.</a></div>
+                    <div class="item"><a href="">testimonials.</a></div>
+                    <div class="item"><a href="">contact.</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="about wrapper" id="about">
+            <div class="about-info">
+                <div class="about-text">
+                    <div class="about-title">I'm Zahid,</div>
+                    <div class="dob">( 02 Feb, 2008. )</div>
+                    <div class="p">
+                        I make websites, web apps and design modern UI/UX. My passion lies in transforming
+                        imagination into tangible code.
                     </div>
-                    <div class="btns">
-                        <div class="btn-set1">
-                            <div onclick="window.location='https://www.github.com/zahide4/'" class="btn">
-                                <i class="fa-brands fa-github"></i> Github
-                            </div>
-                            <div onclick="window.location='https://www.instagram.com/zahid_e4/'" class="btn"><i
-                                    class="fa-brands fa-instagram"></i> Instagram</div>
+                    <div class="p">
+                        I am dedicated to delivering exceptional results and impressing my clients. I've been invested
+                        in
+                        learning various technologies for the past 5 years and now aim to make it my career.
+                    </div>
+                    <div class="p p-title">
+                        QUICK INTRO,
+                    </div>
+
+                    <div class="p p-list">
+                        <div class="p-items"><i class="fa-solid fa-compass-drafting"></i> Product Design and development
                         </div>
-                        <div id="id" onclick="copy()" class="btn"><i class="fa-brands fa-discord"></i> Zahid#3554</div>
+                        <div class="p-items"><i class="fa-solid fa-window-restore"></i> Frontend Development</div>
+                        <div class="p-items"><i class="fa-solid fa-microchip"></i> IoT enthusiast</div>
+
                     </div>
-
                 </div>
-
-                <div class="header-img">
-                    <img src="./assets/Group 9.svg" alt="" class="h-img">
+                <div class="about-image">
+                    <img src="./Group 8 (1) 1.svg" alt="">
                 </div>
-
             </div>
 
         </div>
 
-        <div class="about-me-container">
-            <div class="about-me"  data-aos="fade-up">
-                <div class="heading" data-aos="fade-up">about me</div>
+        <div class="projects wrapper" id="projects">
+            <div class="project-title">" Fortune favours the bold. "</div>
+            <div class="projects-paras">
+                <div class="p">
+                    Over my 5+ years of designing and developing, I have been lucky enough to work
+                    with some amazing people & teams.
+                </div>
+                <div class="p">
+                    Below is a selected list of projects that I’ve helped companies design & build over the years.
+                    Some are a success, some are a failure - but all learning in disguise ✨
+                </div>
+            </div>
 
-                <div class="about-para">
-                    I make websites, web apps and design modern UI/UX. My passion lies in transforming imagination into
-                    tangible code. I am dedicated to delivering exceptional results and impressing my clients. I've been
-                    invested in learning various technologies for the past 3 years and now aim to make it my career.
+
+
+            <div class="projects-container">
+
+                <div class="project project2">
+
+
+                    <div class="project-image"> <img src="./images/deceptioner.webp" alt=""> </div>
+
+
+                    <div class="project-info">
+                        <div class="project-name">
+
+                            <span class="project-special">Deceptioner </span> - is a free online rewriter and
+                            paraphraser powered by ChatGPT. The generated text is witty and can bypass various AI
+                            content
+                            detectors.
+                        </div>
+                        <div class="more-info">
+                            <div class="project-time">
+                                <i class="fa-solid fa-clock"></i>Aug 2023 - Current
+                            </div>
+                            <div class="project-involvement">
+                                <i class="fa-solid fa-compass-drafting"></i> Designed and developed the frontend
+                            </div>
+
+                            <div class="project-tools">
+                                <i class="fa-solid fa-screwdriver-wrench"></i> Figma, Python Flask, CSS
+                            </div>
+                        </div>
+                        <div class="project-goto btn">
+                            <a target="_blank" href="https://deceptioner.site"><i class="fa-solid fa-rocket"></i> View
+                                -></a>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="line"></div>
+                <div class="project project2">
 
-                <div class="techstack" data-aos="fade-up">
-                    <div class="tech-set1">
-                        <div class="tech top-tech"><i class="fa-brands fa-html5"></i>Html5</div>
-                        <div class="tech top-tech"><i class="fa-brands fa-css3-alt"></i>Css3</div>
-                        <div class="tech top-tech"><i class="fa-brands fa-square-js"></i>Js/Ts</div>
-                        <div class="tech top-tech"><i class="fa-solid fa-pen-nib"></i>Illustrator</div>
+
+                    <div class="project-image"> <img src="./images/image.png" alt=""> </div>
+
+
+                    <div class="project-info">
+                        <div class="project-name">
+
+                            <span class="project-special">Parrotu.com </span> - an anonymous social platform where
+                            users connect, share thoughts freely, and express themselves without fear. It’s a safe space
+                            to
+                            speak your mind and be heard.
+                        </div>
+                        <div class="more-info">
+                            <div class="project-time">
+                                <i class="fa-solid fa-clock"></i> Aug 2023
+                            </div>
+                            <div class="project-involvement">
+                                <i class="fa-solid fa-compass-drafting"></i> Designed and developed landing page
+                            </div>
+
+                            <div class="project-tools">
+                                <i class="fa-solid fa-screwdriver-wrench"></i> Figma, React, CSS
+                            </div>
+                        </div>
+                        <div class="project-goto btn">
+                            <a target="_blank" href="https://parrotu.com/"><i class="fa-solid fa-rocket"></i> View
+                                -></a>
+                        </div>
                     </div>
-                    <div class="tech-set2">
-                        <div class="tech bottom-tech"><i class="fa-brands fa-python"></i>Python</div>
-                        <div class="tech bottom-tech"><i class="fa-brands fa-figma"></i>Figma</div>
+
+                </div>
+
+
+                <div class="project project2">
+
+                    <div class="project-image">
+                        <img src="./images/moz.webp" alt="">
+                    </div>
+
+
+                    <div class="project-info">
+                        <div class="project-name">
+
+                            <span class="project-special">Super Moz </span> - is a GFX designer who designs YouTube
+                            banners,
+                            Twitter banners and advertisement threads. He also setups Discord and Minecraft servers.
+                        </div>
+                        <div class="more-info">
+                            <div class="project-time">
+                                <i class="fa-solid fa-clock"></i> Oct 2022
+                            </div>
+                            <div class="project-involvement">
+                                <i class="fa-solid fa-compass-drafting"></i> Made the portfolio website
+                            </div>
+
+                            <div class="project-tools">
+                                <i class="fa-solid fa-screwdriver-wrench"></i> Figma, HTML, CSS
+                            </div>
+                        </div>
+                        <div class="project-goto btn">
+                            <a target="_blank" href="./moz/index.html"><i class="fa-solid fa-rocket"></i> View
+                                -></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="line line2"></div>
+                <div class="project project2">
+
+
+                    <div class="project-image">
+                        <img src="./images/apex.webp" alt="">
+                    </div>
+
+
+                    <div class="project-info">
+                        <div class="project-name">
+
+                            <span class="project-special">Apex Cloud </span> - is a Discord bot hosting service that
+                            provides reliable performance, great uptime, and seamless management—all completely free to
+                            use.
+                        </div>
+                        <div class="more-info">
+                            <div class="project-time">
+                                <i class="fa-solid fa-clock"></i> Jun 2022
+                            </div>
+                            <div class="project-involvement">
+                                <i class="fa-solid fa-compass-drafting"></i> Designed and developed landing page
+                            </div>
+
+                            <div class="project-tools">
+                                <i class="fa-solid fa-screwdriver-wrench"></i> Figma, HTML, CSS, Javscript
+                            </div>
+                        </div>
+                        <div class="project-goto btn">
+                            <a target="_blank" href="./apexhosting/index.html"><i class="fa-solid fa-rocket"></i> View
+                                -></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="project project2">
+
+
+                    <div class="project-image">
+                        <img src="./images/dykmg.webp" alt="">
+                    </div>
+
+
+                    <div class="project-info">
+                        <div class="project-name">
+
+                            <span class="project-special">DYKMG </span> - or Did You Know is a media group whose object
+                            is
+                            to create media content that educates and entertains people globally.
+                        </div>
+                        <div class="more-info">
+                            <div class="project-time">
+                                <i class="fa-solid fa-clock"></i> Feb 2023
+                            </div>
+                            <div class="project-involvement">
+                                <i class="fa-solid fa-compass-drafting"></i> Designed the home page
+                            </div>
+
+                            <div class="project-tools">
+                                <i class="fa-solid fa-screwdriver-wrench"></i> Figma, HTML, CSS
+                            </div>
+                        </div>
+                        <div class="project-goto btn">
+                            <a target="_blank" href="./dykmg/index.html"><i class="fa-solid fa-rocket"></i> View
+                                -></a>
+                        </div>
+                    </div>
+
+                </div>
+
 
 
             </div>
         </div>
 
-        <div class="projects-container">
-            <div class="projects">
-                <div class="heading" data-aos="fade-up">projects</div>
-                <div class="projects-box">
-
-                    <a data-aos="fade-left" href="./moz/index.html" target="_blank" class="project">
-                        <img src="./assets/moz.png" alt="Apex Cloud" class="p-img">
-
-                        <div class="p-info" >
-                            <div class="p-info1">
-                                <div class="p-name">Super Moz</div>
-                                <div class="p-para">Moz is a GFX designer who designs YouTube banners, Twitter
-                                    banners and advertisement threads. He also setups Discord and Minecraft
-                                    servers.
-                                </div>
-
-                            </div>
-                            <div class="btn1">Go to site</div>
-
-                        </div>
-                    </a>
-
-                    <a data-aos="fade-right" href="./apexhosting/index.html" target="_blank" class="project">
-                        <img src="./assets/apex.png" alt="Apex Cloud" class="p-img">
-
-                        <div class="p-info">
-                            <div class="p-info1">
-                                <div class="p-name">Apex Cloud</div>
-                                <div class="p-para">Apex Cloud is a discord bot hosting service. It provides
-                                    reasonable uptimes absolutely for free
-                                </div>
-
-                            </div>
-                            <div class="btn1">Go to site</div>
-
-                        </div>
-                    </a>
-
-                    <a data-aos="fade-left" href="https://deceptioner.site/" target="_blank" class="project">
-                        <img src="./assets/deceptioner.png" alt="deceptioner" class="p-img">
-
-                        <div class="p-info">
-                            <div class="p-info1">
-                                <div class="p-name">Deceptioner</div>
-                                <div class="p-para">
-                                    Deceptioner is a free online rewriter and paraphraser powered by ChatGPT. The
-                                    generated text is witty and can bypass various AI content detectors.
-                                </div>
-
-                            </div>
-                            <div class="btn1">Go to site</div>
-
-                        </div>
-                    </a>
-
-                    <a data-aos="fade-right" href="./dykmg/index.html" target="_blank" class="project">
-                        <img src="./assets/dykmg.png" alt="Apex Cloud" class="p-img">
-
-                        <div class="p-info">
-                            <div class="p-info1">
-                                <div class="p-name">DYKMG</div>
-                                <div class="p-para">DYKMG or Did You Know is a media group whose object is to
-                                    create media content that educates and entertains people globally.
-                                </div>
-
-                            </div>
-                            <div class="btn1">Go to site</div>
-
-                        </div>
-                    </a>
-
-                    <a data-aos="fade-left" href="https://www.parottu.me/" target="_blank" class="project">
-                        <img src="./assets/parottu.png" alt="Apex Cloud" class="p-img">
-
-                        <div class="p-info">
-                            <div class="p-info1">
-                                <div class="p-name">Parottu</div>
-                                <div class="p-para">Parottu is an anonymous social platform connecting people
-                                    worldwide, safely express yourself without judgement.
-                                </div>
-                            </div>
-                            <div class="btn1">Go to site</div>
-                        </div>
-                    </a>
-
+        <div class="who wrapper">
+            <div class="who-container">
+                <div class="who-title about-title">See if I’m right for you.</div>
+                <div class="who-paras">
+                    <div class="p">With over 5 years of experience, I’m comfortable leading both big and small design initiatives from zero to launch and beyond, or building upon existing frameworks. I simply love transforming insights into memorable user experiences with strong visual execution and high usability, that benefits both the user and the business.</div>
+                    <div class="p">Most often, I either act as a subcontractor for your agency or consultancy, or I’m embedded within your product team. I thrive in cross-functional teams, collaborating closely with developers, designers, PMs, and others.</div>
+                    <div class="p">I understand that choosing a designer for your project is hard, and selecting the right one is even harder. Get in touch today, meet me tomorrow, and let’s see if we’re a good match.</div>
                 </div>
-            </div>
-        </div>
-
-        <div class="testimonial-container">
-
-            <div class="testimonials">
-                <div class="heading">testimonials</div>
-                <div class="boxes">
-                    <div data-aos="fade-left" class="box box1" data-tilt data-tilt-max="10" data-tilt-glare
-                        data-tilt-max-glare="0.1">
-                        <div class="t-title">ARandomGuy<span>#3912</span></div>
-                        <div class="t-para">
-                            <span>" </span>Zahid has been really helpful and exact when it came to my
-                            Website
-                            needs. I was always needing something exact, and he delivered. Five out of five!
-                            <span>"</span>
-
+                <div class="who-about">
+                    <div class="who-part1">
+                        <div class="who-img"><img src="./assets/profile-pic.jpeg" alt=""></div>
+                        <div class="who-info">
+                            <div class="signature"><img src="./assets/signature.png" alt=""></div>
+                            <div class="who-name">Zahid.</div>
+                            <div class="who-location">Deoghar, India.</div>
                         </div>
-                    </div>
-                    <div data-aos="fade-left" class="box box2" data-tilt data-tilt-glare data-tilt data-tilt-max="10"
-                        data-tilt-max-glare="0.1">
-                        <div class="t-title">Orca<span>#0612</span>
-                        </div>
-                        <div class="t-para">
-                            <span>" </span>Quick Communication, Clean designs and just overall enjoyable to
-                            work
-                            with, He took feedback very well and improved on things I mentioned. 10/10,
-                            recommended!
-                            <span>"</span>
-
-                        </div>
-                    </div>
-                    <div data-aos="fade-left" class="box box3" data-tilt data-tilt-glare data-tilt data-tilt-max="10"
-                        data-tilt-max-glare="0.1">
-                        <div class="t-title">sybetjeh.<span>#1221</span>
-                        </div>
-                        <div class="t-para">
-                            <span>" </span>Zahid is trust-worthy to satisfy your needs on your website. I
-                            only
-                            told him a short description for what the site is for, and he took care of the
-                            rest.
-                            Recommended!
-                            <span>"</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-top: 3rem" class="line"></div>
-            </div>
-
-        </div>
-
-        <div class="contact-container">
-            <div class="heading">Contact</div>
-            <div class="contact">
-                <div class="section1">
-                    <div class="heading2">My Socials</div>
-                    <div class="btns">
-                        <div class="btn-set1">
-                            <div class="btn" onclick="window.location='https://www.github.com/zahide4/'"><i
-                                    class="fa-brands fa-github"></i> Github</div>
-                            <div id="id3" onclick="copy3()" class="btn"><i class="fa-solid fa-envelope"></i> Email</div>
-                        </div>
-                        <div id="id2" onclick="copy2()" class="btn"><i class="fa-brands fa-discord"></i> Zahid#3554
-                        </div>
-                    </div>
-
-                </div>
-                <div class="section2">
-                    <div onclick="window.location='https://deceptioner.site'" class="ad">
-
-                        <div class="heading2">Check out Deceptioner. </div>
-                        <div class="para">The free text re-writer</div>
                     </div>
                 </div>
             </div>
-        </div>
 
+
+        </div>
     </div>
-    <input readonly value="Zahid#3554" class="inputs" id="myInput" type="text">
-    <input readonly value="cremier4@gmail.com" class="inputs" id="myInput2" type="text">
+    <div class="main2">
+        <div class="testimonials scroller" data-direction="right" id="horizontal">
+            <div class="project-title testimonial-title">" If words speak louder than actions "</div>
 
+
+            <div class="testimonial-container .scroller__inner">
+
+
+                <div class="testimonial content">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "<span class="highlight">Zahid has been really helpful and exact when it came to my Website
+                            needs.</span> I was always needing
+                        something exact, and he delivered. Five out of five!"
+                    </div>
+                    <div class="testimonial-name">- ARandomGuy</div>
+                </div>
+
+                <div class="testimonial content test2">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "<span class="highlight">Zahid is trust-worthy to satisfy your needs </span> on your website. I
+                        only told him a short
+                        description for what the site is for, and he took care of the rest. Recommended!"
+                    </div>
+                    <div class="testimonial-name">- sybetjeh</div>
+                </div>
+
+                <div class="testimonial content">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "<span class="highlight">Quick Communication, Clean designs </span> and just overall enjoyable
+                        to work with, He took feedback
+                        very well and improved on things I mentioned. 10/10, recommended!"
+                    </div>
+                    <div class="testimonial-name">- Orca</div>
+                </div>
+
+
+
+                <!-- ////////////////////////////////// -->
+
+
+                <div class="testimonial content">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "<span class="highlight">Zahid has been really helpful and exact when it came to my Website
+                            needs.</span> I was always needing
+                        something exact, and he delivered. Five out of five!"
+                    </div>
+                    <div class="testimonial-name">- ARandomGuy</div>
+                </div>
+
+                <div class="testimonial content test2">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "<span class="highlight">Zahid is trust-worthy to satisfy your needs </span> on your website. I
+                        only told him a short
+                        description for what the site is for, and he took care of the rest. Recommended!"
+                    </div>
+                    <div class="testimonial-name">- sybetjeh</div>
+                </div>
+
+                <div class="testimonial content">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "<span class="highlight">Quick Communication, Clean designs </span> and just overall enjoyable
+                        to work with, He took feedback
+                        very well and improved on things I mentioned. 10/10, recommended!"
+                    </div>
+                    <div class="testimonial-name">- Orca</div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="testimonials wrapper" id="mobile-testimonials">
+            <div class="project-title testimonial-title">" If words speak louder than actions "</div>
+
+
+
+            <div class="testimonial-container">
+
+
+                <div class="testimonial">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "Zahid has been really helpful and exact when it came to my Website needs. I was always needing
+                        something exact, and he delivered. Five out of five!"
+                    </div>
+                    <div class="testimonial-name">- ARandomGuy</div>
+                </div>
+
+                <div class="testimonial test2">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "Quick Communication, Clean designs and just overall enjoyable to work with, He took feedback
+                        very well and improved on things I mentioned. 10/10, recommended!"
+                    </div>
+                    <div class="testimonial-name">- Orca</div>
+                </div>
+
+                <div class="testimonial ">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "Quick Communication, Clean designs and just overall enjoyable to work with, He took feedback
+                        very well and improved on things I mentioned. 10/10, recommended!"
+                    </div>
+                    <div class="testimonial-name">- Orca</div>
+                </div>
+
+                <div class="testimonial  test2">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "Quick Communication, Clean designs and just overall enjoyable to work with, He took feedback
+                        very well and improved on things I mentioned. 10/10, recommended!"
+                    </div>
+                    <div class="testimonial-name">- Orca</div>
+                </div>
+
+                <div class="testimonial ">
+                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        "Quick Communication, Clean designs and just overall enjoyable to work with, He took feedback
+                        very well and improved on things I mentioned. 10/10, recommended!"
+                    </div>
+                    <div class="testimonial-name">- Orca</div>
+                </div>
+            </div>
+        </div>
+        <div class="zahid-slogan racesWrapper">
+            <div class="slogantext races">
+                <h2 class="slogan-main">When</h2>
+                <h2 class="slogan-main">Zahid</h2>
+                <h2 class="slogan-main">makes</h2>
+                <h2 class="slogan-main">a</h2>
+                <h2 class=" special">promise,</h2>
+                <h2 class="slogan-main">it's</h2>
+                <h2 class="slogan-main">not</h2>
+                <h2 class="slogan-main">a</h2>
+                <h2 class="slogan-main">maybe</h2>
+                <h2 class="slogan-main">—</h2>
+                <h2 class="slogan-main">it's</h2>
+                <h2 class="slogan-main">a</h2>
+                <h2 class=" special">guarantee</h2>
+                <h2 class="slogan-main">backed</h2>
+                <h2 class="slogan-main">by</h2>
+                <h2 class="slogan-main">relentless</h2>
+                <h2 class=" special">effort</h2>
+                <h2 class="slogan-main">and</h2>
+                <h2 class="slogan-main">undeniable</h2>
+                <h2 class=" special">results.</h2>
+                <h2 class="slogan-main">He</h2>
+                <h2 class="slogan-main">doesn't</h2>
+                <h2 class="slogan-main">just</h2>
+                <h2 class="slogan-main  ">work;</h2>
+                <h2 class="slogan-main">he</h2>
+                <h2 class="special">outworks,</h2>
+                <h2 class="special">outthinks,</h2>
+                <h2 class="slogan-main">and</h2>
+                <h2 class="special">outdelivers.</h2>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="contact-title">Better together.</div>
+            <div class="contact-container">
+                <div class="contact-subtitle">Let's make something beautiful.</div>
+                <div class="contact-info">
+                    <div class="socials">
+                        <div class="btns">
+                            <div class="btn-set1">
+                                <div onclick="window.location='https://www.github.com/zahide4/'" class="btn">
+                                    <i class="fa-brands fa-github"></i> Github
+                                </div>
+                                <div onclick="window.location='https://www.instagram.com/zahid.deb/'" class="btn"><i
+                                        class="fa-brands fa-instagram"></i> Instagram</div>
+                            </div>
+                            <div id="id" onclick="copy()" class="btn"><i class="fa-brands fa-discord"></i> @cremier
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-details">
+                        <div class="email">My Email <span>cremier4@gmail.com</span></div>
+                        <div class="phone">My Phone <span>9431163770</span></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+
+
+    </script>
+    <script src="./main.js"></script>
 </body>
-<script>
-
-    function copy() {
-        if (window.innerWidth > 900) {
-            const userid = document.getElementById("id")
-            navigator.clipboard.writeText("Zahid#3554");
-            document.execCommand("copy");
-            userid.innerHTML = "ID Copied";
-            setTimeout(function () {
-                const userid = document.getElementById("id")
-                userid.innerHTML = `<i class="fa-brands fa-discord"></i> Zahid#3554`;
-                console.log("hi")
-            }, 2000);
-        }
-        else {
-            var copyText = document.getElementById('myInput')
-            copyText.select();
-            document.execCommand('copy')
-            const userid1 = document.getElementById("id")
-
-            console.log('Copied Text')
-            userid1.innerHTML = "ID Copied";
-            setTimeout(function () {
-                userid1.innerHTML = `<i class="fa-brands fa-discord"></i> Zahid#3554`;
-                console.log("hi")
-            }, 1500);
-        }
-    }
-
-
-    function copy2() {
-        if (window.innerWidth > 900) {
-            const userid = document.getElementById("id2")
-            navigator.clipboard.writeText("Zahid#3554");
-            document.execCommand("copy");
-            userid.innerHTML = "ID Copied";
-            setTimeout(function () {
-                const userid = document.getElementById("id2")
-                userid.innerHTML = `<i class="fa-brands fa-discord"></i> Zahid#3554`;
-                console.log("hi")
-            }, 2000);
-        }
-        else {
-            var copyText = document.getElementById('myInput')
-            copyText.select();
-            document.execCommand('copy')
-            const userid1 = document.getElementById("id2")
-
-            console.log('Copied Text')
-            userid1.innerHTML = "ID Copied";
-            setTimeout(function () {
-                userid1.innerHTML = "Zahid#3554";
-                console.log("hi")
-            }, 1500);
-        }
-    }
-
-
-    function copy3() {
-        if (window.innerWidth > 900) {
-            const userid = document.getElementById("id3")
-            navigator.clipboard.writeText("cremier4@gmail.com");
-            document.execCommand("copy");
-            userid.innerHTML = "Copied";
-            setTimeout(function () {
-                const userid = document.getElementById("id3")
-                userid.innerHTML = `<i class="fa-solid fa-envelope"></i> Email`;
-                console.log("hi")
-            }, 2000);
-        }
-        else {
-            var copyText = document.getElementById('myInput2')
-            copyText.select();
-            document.execCommand('copy')
-            const userid1 = document.getElementById("id3")
-
-            console.log('Copied Text')
-            userid1.innerHTML = "Copied";
-            setTimeout(function () {
-                userid1.innerHTML = `<i class="fa-solid fa-envelope"></i> Email`;
-                console.log("hi")
-            }, 1500);
-        }
-    }
-</script>
-<script>
-    AOS.init();
-</script>
 
 </html>
