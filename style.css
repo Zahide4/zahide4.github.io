@@ -241,9 +241,10 @@ a {
 }
 
 .about-image {
-    width: 400px;
+    max-width: 400px;
     pointer-events: none;
     user-select: none;
+    width: 100%;
 }
 
 .about-image img {
@@ -691,7 +692,7 @@ a {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -830,22 +831,22 @@ a {
     }
 
     .about-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
         margin-top: 2rem;
         line-height: 4rem;
     }
 
     .about-text {
-        padding-inline: 1rem;
-
+        /* padding-inline: 1rem; */
+        /* align-items: center; */
     }
 
     .about-text .p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .about img {
-        padding-inline: 2rem;
+        /* padding-inline: 2rem; */
     }
 
     .who-title {
@@ -919,5 +920,14 @@ a {
     .races h2 {
         font-size: 4rem;
         letter-spacing: -3px;
+
+        
+    }
+
+    .contact {
+        align-items: center;
+    }
+    .contact-container {
+        align-items: unset;
     }
 }
