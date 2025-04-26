@@ -159,12 +159,25 @@ button:hover {
 }
 
 .entry-container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.entry-container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.entry-container {
     width: 100vw;
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    height: 60vh;
+    overflow-y: scroll;
+    margin-block: auto;
+    padding-block: 1rem;
 }
 
 #entries {
