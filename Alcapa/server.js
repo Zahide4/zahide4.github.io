@@ -59,17 +59,24 @@ async function loadEntries() {
 
     const div = document.createElement("div");
     div.classList.add("entry");
+
+    // Truncate content if it's too long
+    const previewContent = entry.content.length > 150 
+      ? entry.content.substring(0, 150) + "..." 
+      : entry.content;
+
     div.innerHTML = `
       <h3>${entry.title}</h3>
-      <p>${entry.content}</p>
+      <p>${previewContent}</p>
       <div class="entry-box">
-      <div class="timestamp">${date}</div>
-      <button class="delete-btn" onclick="deleteEntry('${docSnap.id}')">🗑 Delete</button> </div
+        <div class="timestamp">${date}</div>
+        <button class="readmore-btn" onclick="openFullEntry('${entry.title}', \`${entry.content.replace(/`/g, "\\`")}\`)">📖 Read More</button>
+        <button class="delete-btn" onclick="deleteEntry('${docSnap.id}')">🗑 Delete</button>
+      </div>
     `;
     entriesDiv.appendChild(div);
   });
 }
-
 // === Delete Entry ===
 window.deleteEntry = async function (id) {
   const confirmDelete = confirm("Are you sure you want to delete this note?");

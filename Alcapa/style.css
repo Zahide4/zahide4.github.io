@@ -14,8 +14,7 @@
 
 }
 
-body {
-}
+body {}
 
 body::after {
     content: "";
@@ -184,13 +183,13 @@ button:hover {
 
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 1.5rem;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.144);
     /* box-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a); */
     background-color: rgba(255, 255, 255, 0.24);
-    
+
 }
 
 
@@ -206,7 +205,6 @@ button:hover {
 .entry .delete-btn {
     background: transparent;
     border: none;
-    color: red;
     font-weight: bold;
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -241,6 +239,13 @@ button:hover {
     font-family: "Gloria Hallelujah";
     font-size: 1rem;
     margin-bottom: 0;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* show only 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .entry-box {
@@ -249,19 +254,140 @@ button:hover {
     justify-content: space-between;
 }
 
+
+#full-entry-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow-y: hidden;
+}
+
+#full-entry-popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.2s;
+    margin-block: 5rem;
+    overflow-y: scroll;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.popup-content h2{
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    font-family: "Inter";
+    margin-inline: auto;
+    margin-bottom: 2rem;
+
+}
+
+.popup-content p{
+    color: var(--main-text);
+    border-radius: 20px;
+    /* margin-bottom: 1rem; */
+    font-family: "Gloria Hallelujah";
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+#close-popup {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: black;
+    line-height: 1rem;
+    transition: all 0.1s;
+    margin-inline: auto;
+    /* width: 100%; */
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.readmore-btn {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: black;
+    line-height: 1rem;
+    transition: all 0.1s;
+    margin-left: auto;
+    /* width: 100%; */
+    text-align: center;
+    margin-right: 1rem;
+}
+
+
+#close-popup:hover, .readmore-btn:hover {
+    background-color: var(--main-text);
+    color: var(--main-bg)
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+
 @media only screen and (max-width: 1000px) {
     body::after {
         /* background: var(--main-bg); */
         position: fixed;
     }
+
     .main {
-      flex-direction: column;
-      margin-block: 1rem;
-      margin-block-end: 5rem;
-      gap: 1rem;
-      justify-content: unset;
+        flex-direction: column;
+        margin-block: 1rem;
+        margin-block-end: 5rem;
+        gap: 1rem;
+        justify-content: unset;
     }
-    .container, .entry-container {
+
+    .container,
+    .entry-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -273,14 +399,15 @@ button:hover {
         min-height: 0;
     }
 
-    .journal-entry-box, .entry {
+    .journal-entry-box,
+    .entry {
         box-shadow: unset;
         display: flex;
         flex-direction: column;
         align-items: unset;
         justify-content: unset;
     }
-  }
+}
 
 /* 
 .journal-entry-box #content {

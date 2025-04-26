@@ -21,3 +21,14 @@ const updateHeight = () => {
 };
 textareaEl.addEventListener('input', updateHeight);
 updateHeight();
+
+
+window.openFullEntry = function(title, content) {
+  document.getElementById("popup-title").textContent = title;
+  document.getElementById("popup-content").textContent = content;
+  document.getElementById("full-entry-popup").classList.remove("hidden");
+}
+
+document.getElementById("close-popup").addEventListener("click", () => {
+  document.getElementById("full-entry-popup").classList.add("hidden");
+});
