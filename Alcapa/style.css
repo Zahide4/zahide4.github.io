@@ -331,6 +331,8 @@ button:hover {
     font-family: "Inter";
     margin-inline: auto;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 
 }
 
