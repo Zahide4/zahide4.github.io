@@ -23,9 +23,9 @@ body::after {
     inset: 0;
     width: 100%;
     height: 100%;
-    background: url("./HD-wallpaper-orange-flowers-drawing-orange-aesthetic.jpg") no-repeat center center/cover;
+    background: url("./background3.jpg") no-repeat center center/cover;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 1;
 }
 
 .main {
@@ -67,8 +67,8 @@ body::after {
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.144);
-    box-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    /* box-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a); */
     ;
     background-color: rgba(255, 255, 255, 0.24);
     width: 100%;
@@ -102,7 +102,6 @@ textarea {
     resize: none;
     width: 100%;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.24);
 
 }
 
@@ -115,6 +114,7 @@ textarea {
     font-weight: 800;
     font-family: "Inter";
     margin-bottom: 1rem;
+    background: transparent;
 }
 
 #content {
@@ -124,6 +124,9 @@ textarea {
     margin-bottom: 1rem;
     font-family: "Gloria Hallelujah";
     font-size: 1rem;
+
+    background-color: rgba(255, 255, 255, 0.24);
+
 
 }
 
@@ -185,7 +188,7 @@ button:hover {
     padding: 1.5rem;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.144);
-    box-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
+    /* box-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a); */
     background-color: rgba(255, 255, 255, 0.24);
     
 }
