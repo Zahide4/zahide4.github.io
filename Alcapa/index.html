@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcapa</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/8fb795b438.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="title">Alcapa.</h1>
+            <div class="journal-title">What have you been feeling baby?</div>
+            <div class="journal-entry-box">
+                <form id="journal-form">
+                    <textarea name="text" rows="1" style="overflow:hidden; resize:none;" id="title"
+                        placeholder="Give a subject to keep things organised " required></textarea>
+
+                    <!-- <input type="text" id="title" contenteditable placeholder="Give a subject to keep things organised " required /> -->
+                    <textarea id="content" placeholder="Write your thoughts, and do so like no one’s watching "
+                        rows="6" required></textarea>
+                    <div class="helper-text">I'm just a click away &lt;3</div>
+                    <button type="submit"><i class="fa-solid fa-pen-to-square"></i> Add to the journal</button>
+                </form>
+            </div>
+        </div>
+        <div class="entry-container">
+            <div id="entries"></div>
+
+        </div>
+
+        <script src="./server.js" type="module"></script>
+        <script src="./main.js"></script>
+    </div>
+
+</body>
+
+</html>
