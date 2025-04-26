@@ -17,7 +17,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyD-2MObScY4SzVvdLhNRyZjbwm46HfDeSI",
   authDomain: "alpaca-for-us.firebaseapp.com",
   projectId: "alpaca-for-us",
-  storageBucket: "alpaca-for-us.firebasestorage.app",
+  storageBucket: "alpaca-for-us.appspot.com",
   messagingSenderId: "369086694657",
   appId: "1:369086694657:web:6baed57875f68027db8700",
   measurementId: "G-2D3862ZXXM"
@@ -27,6 +27,16 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const journalRef = collection(db, "journal");
+
+// === Escape HTML function ===
+function escapeHTML(str) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
 
 // === Add Entry ===
 document.getElementById("journal-form").addEventListener("submit", async (e) => {
@@ -57,26 +67,49 @@ async function loadEntries() {
     const entry = docSnap.data();
     const date = entry.timestamp?.toDate?.().toLocaleString() || "just now";
 
+    const safeTitle = escapeHTML(entry.title);
+    const safeContent = escapeHTML(entry.content);
+
+    const previewContent = safeContent.length > 150
+      ? safeContent.substring(0, 150) + "..." 
+      : safeContent;
+
     const div = document.createElement("div");
     div.classList.add("entry");
-
-    // Truncate content if it's too long
-    const previewContent = entry.content.length > 150 
-      ? entry.content.substring(0, 150) + "..." 
-      : entry.content;
-
     div.innerHTML = `
-      <h3>${entry.title}</h3>
+      <h3>${safeTitle}</h3>
       <p>${previewContent}</p>
       <div class="entry-box">
         <div class="timestamp">${date}</div>
-        <button class="readmore-btn" onclick="openFullEntry('${entry.title}', \`${entry.content.replace(/`/g, "\\`")}\`)">📖 Read More</button>
+        <button class="readmore-btn" data-title="${safeTitle}" data-content="${safeContent}">📖 Read More</button>
         <button class="delete-btn" onclick="deleteEntry('${docSnap.id}')">🗑 Delete</button>
       </div>
     `;
     entriesDiv.appendChild(div);
   });
+
+  // Attach event listeners to readmore buttons
+  document.querySelectorAll('.readmore-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const title = button.getAttribute('data-title');
+      const content = button.getAttribute('data-content');
+      openFullEntry(title, content);
+    });
+  });
 }
+
+// === Open Full Entry Popup ===
+function openFullEntry(title, content) {
+  document.getElementById("popup-title").innerText = title;
+  document.getElementById("popup-content").innerHTML = content.replace(/\n/g, "<br>");
+  document.getElementById("full-entry-popup").classList.remove("hidden");
+}
+
+// === Close Popup ===
+document.getElementById("close-popup").addEventListener("click", () => {
+  document.getElementById("full-entry-popup").classList.add("hidden");
+});
+
 // === Delete Entry ===
 window.deleteEntry = async function (id) {
   const confirmDelete = confirm("Are you sure you want to delete this note?");
@@ -86,5 +119,5 @@ window.deleteEntry = async function (id) {
   loadEntries();
 };
 
-// Initial load
+// === Initial load ===
 loadEntries();
