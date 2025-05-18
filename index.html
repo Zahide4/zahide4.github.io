@@ -26,10 +26,12 @@
                     learn shit. </div>
 
                 <div class="header-buttons">
-                    <a href="#projects"><div class="button first-button"><i class="fa-solid fa-laptop-code"></i> projects</div></a>
+                    <a href="#projects">
+                        <div class="button first-button"><i class="fa-solid fa-laptop-code"></i> projects</div>
+                    </a>
                     <a href="#contact">
-                    <div class="button btn"><i class="fa-solid fa-user-group"></i> my socials</div>
-                </a>
+                        <div class="button btn"><i class="fa-solid fa-user-group"></i> my socials</div>
+                    </a>
 
                 </div>
             </div>
@@ -276,9 +278,16 @@
             <div class="who-container">
                 <div class="who-title about-title">See if I’m right for you.</div>
                 <div class="who-paras">
-                    <div class="p">With over 5 years of experience, I’m comfortable leading both big and small design initiatives from zero to launch and beyond, or building upon existing frameworks. I simply love transforming insights into memorable user experiences with strong visual execution and high usability, that benefits both the user and the business.</div>
-                    <div class="p">Most often, I either act as a subcontractor for your agency or consultancy, or I’m embedded within your product team. I thrive in cross-functional teams, collaborating closely with developers, designers, PMs, and others.</div>
-                    <div class="p">I understand that choosing a designer for your project is hard, and selecting the right one is even harder. Get in touch today, meet me tomorrow, and let’s see if we’re a good match.</div>
+                    <div class="p">With over 5 years of experience, I’m comfortable leading both big and small design
+                        initiatives from zero to launch and beyond, or building upon existing frameworks. I simply love
+                        transforming insights into memorable user experiences with strong visual execution and high
+                        usability, that benefits both the user and the business.</div>
+                    <div class="p">Most often, I either act as a subcontractor for your agency or consultancy, or I’m
+                        embedded within your product team. I thrive in cross-functional teams, collaborating closely
+                        with developers, designers, PMs, and others.</div>
+                    <div class="p">I understand that choosing a designer for your project is hard, and selecting the
+                        right one is even harder. Get in touch today, meet me tomorrow, and let’s see if we’re a good
+                        match.</div>
                 </div>
                 <div class="who-about">
                     <div class="who-part1">
@@ -444,39 +453,28 @@
 
             </div>
         </div>
-        <div class="zahid-slogan racesWrapper">
-            <div class="slogantext races">
-                <h2 class="slogan-main">When</h2>
-                <h2 class="slogan-main">Zahid</h2>
-                <h2 class="slogan-main">makes</h2>
-                <h2 class="slogan-main">a</h2>
-                <h2 class=" special">promise,</h2>
-                <h2 class="slogan-main">it's</h2>
-                <h2 class="slogan-main">not</h2>
-                <h2 class="slogan-main">a</h2>
-                <h2 class="slogan-main">maybe</h2>
-                <h2 class="slogan-main">—</h2>
-                <h2 class="slogan-main">it's</h2>
-                <h2 class="slogan-main">a</h2>
-                <h2 class=" special">guarantee</h2>
-                <h2 class="slogan-main">backed</h2>
-                <h2 class="slogan-main">by</h2>
-                <h2 class="slogan-main">relentless</h2>
-                <h2 class=" special">effort</h2>
-                <h2 class="slogan-main">and</h2>
-                <h2 class="slogan-main">undeniable</h2>
-                <h2 class=" special">results.</h2>
-                <h2 class="slogan-main">He</h2>
-                <h2 class="slogan-main">doesn't</h2>
-                <h2 class="slogan-main">just</h2>
-                <h2 class="slogan-main  ">work;</h2>
-                <h2 class="slogan-main">he</h2>
-                <h2 class="special">outworks,</h2>
-                <h2 class="special">outthinks,</h2>
-                <h2 class="slogan-main">and</h2>
-                <h2 class="special">outdelivers.</h2>
+
+
+        <section class="zahid-slogan parallax-effect">
+            <div class="slogantext">
+                <h2 class="slogan-main">
+                    <span class="word">When</span> <span class="word">zahid</span> <span class="word">makes</span> <span
+                        class="word">a</span>
+                    <span class="word special">promise,</span>
+                </h2>
+                <h2 class="slogan-main">
+                    <span class="word">he</span> <span class="word">doesn't</span> <span class="word">just</span> <span
+                        class="word">work;</span>
+                </h2>
+                <h2 class="slogan-main">
+                    <span class="word">he</span> <span class="word special">outworks,</span>
+                    <span class="word special">outthinks,</span> <span class="word">and</span>
+                    <span class="word special">outdelivers.</span>
+                </h2>
             </div>
-        </div>
+        </section>
+
+
         <div class="contact" id="contact">
             <div class="contact-title">Better together.</div>
             <div class="contact-container">
@@ -512,11 +510,41 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
 
+
     <script>
+        const sections = document.querySelectorAll('.slogan-main');
 
+        function animateWordsOnScroll() {
+            sections.forEach(section => {
+                const words = section.querySelectorAll('.word');
+                const rect = section.getBoundingClientRect();
+                const winHeight = window.innerHeight;
 
+                // Calculate how much the section is in view
+                let progress = 1 - Math.max(0, rect.top) / winHeight;
+                progress = Math.min(Math.max(progress, 0), 1); // Clamp 0–1
+
+                words.forEach((word, index) => {
+                    const delayFactor = index * 0.05; // Stagger strength
+                    const localProgress = (progress - delayFactor) / 0.5; // Normalize to 0–1
+                    const clamped = Math.min(Math.max(localProgress, 0), 1);
+
+                    word.style.opacity = clamped;
+                    word.style.transform = `translateY(${(1 - clamped) * 40}px)`;
+                    word.style.filter = `blur(${(1 - clamped) * 6}px)`;
+                });
+            });
+
+            requestAnimationFrame(animateWordsOnScroll);
+        }
+
+        requestAnimationFrame(animateWordsOnScroll);
     </script>
+
     <script src="./main.js"></script>
+
+
+
 </body>
 
 </html>
