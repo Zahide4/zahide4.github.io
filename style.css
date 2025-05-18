@@ -154,6 +154,8 @@ body {}
 }
 
 
+
+
 .nav {
     position: fixed;
     display: none;
@@ -758,11 +760,12 @@ a {
 .special {
     color: var(--main-bg);
 }
+
 .word {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(40px);
-  filter: blur(8px);
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(8px);
 }
 
 
@@ -893,9 +896,9 @@ a {
     }
 
     .header-title {
-        font-size: 3rem;
+        font-size: calc(1rem + 8vw);
         line-height: 3.5rem;
-
+        letter-spacing: -2px;
     }
 
     .main {
@@ -903,12 +906,13 @@ a {
     }
 
     .header-title span {
-        font-size: 3.5rem;
+        font-size: calc(1rem + 8vw);
         line-height: 3.5rem;
+        letter-spacing: -2px;
     }
 
     .main {
-        padding-top: 6rem;
+        padding-top: 4rem;
     }
 
     .header {
@@ -918,7 +922,7 @@ a {
     .header-buttons {}
 
     .about {
-        margin-top: 10rem;
+        margin-top: 4rem;
     }
 
     .about-title {
@@ -939,7 +943,11 @@ a {
     .about img {
         /* padding-inline: 2rem; */
     }
+    .who {
+        width: 100%;
+        padding-inline: 1rem;
 
+    }
     .who-title {
         font-size: 3rem;
         line-height: 3.5rem;
@@ -1026,4 +1034,31 @@ a {
     .contact-container {
         align-items: unset;
     }
+
+    .parallax-effect {
+        min-height: unset;
+        padding-inline: 1rem;
+    }
+
+    .slogantext h2 {
+        font-size: 1.5rem;
+        font-family: "poppins";
+        font-weight: 500;
+        letter-spacing: -1px;
+        color: var(--para-secondary);
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .special {
+        font-size: 1.5rem;
+        font-family: "poppins";
+        font-weight: 500;
+        letter-spacing: -1px;
+        color: var(--para-secondary);
+        line-height: 2rem;
+
+    }
+
+
 }
